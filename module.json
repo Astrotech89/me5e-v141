@@ -1,0 +1,103 @@
+{
+	"name": "me5e",
+	"title": "ME5e",
+	"description": "A module to add support for ME5e, a futuristic sci-fi setting, to your 5e world. Includes most compendium content from ME5e excluding that which would infringe on copyright.",
+
+	"esmodules": [
+		"./src/me5e.js"
+	],
+	"styles":[
+		"./styles/me5e.css",
+		"./styles/paragon.css",
+		"./styles/renegade.css"
+	],
+	"packs": [
+		{
+			"name": "backgrounds-me5e",
+			"label": "Backgrounds (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/backgrounds-me5e.db",
+			"entity": "Item"
+		},
+		{
+			"name": "bestiary-me5e",
+			"label": "Bestiary (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/bestiary-me5e.db",
+			"entity": "Actor"
+		},
+		{
+			"name": "classes-me5e",
+			"label": "Classes (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/classes-me5e.db",
+			"entity": "Item"
+		},
+		{
+			"name": "class-features-me5e",
+			"label": "Class Features (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/class-features-me5e.db",
+			"entity": "Item"
+		},
+		{
+			"name": "feats-me5e",
+			"label": "Feats (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/feats-me5e.db",
+			"entity": "Item"
+		},
+		{
+			"name": "item-catalogue-me5e",
+			"label": "Item Catalogue (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/item-catalogue-me5e.db",
+			"entity": "Item"
+		},
+		{
+			"name": "racial-features-me5e",
+			"label": "Racial Features (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/racial-features-me5e.db",
+			"entity": "Item"
+		},
+		{
+			"name": "spells-me5e",
+			"label": "Spells (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/spells-me5e.db",
+			"entity": "Item"
+		},
+		{
+			"name": "vehiclesme5e",
+			"label": "Vehicles (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/vehiclesme5e.db",
+			"entity": "Actor"
+		}
+	  ],
+	"dependencies":[
+		{
+			"name": "metric-system-dnd5e", 
+			 "manifest": "https://gitlab.com/foundry-vtt/foundryvtt-metricsystem-module/raw/master/module.json",
+			 "version": "1.0.1"
+		}
+	],
+	"languages": [
+		{
+		  "lang": "en",
+		  "name": "English",
+		  "path": "lang/en.json"
+		}
+	],
+
+	"system": "dnd5e",
+	"author": "Parker (sparkcities#2000)",
+	"version": "1.9.0",
+	"minimumCoreVersion": "0.7.5",
+	"compatibleCoreVersion": "0.7.7",
+	"url": "https://github.com/sparkcity/fvtt-me5e",
+	"manifest": "https://github.com/sparkcity/fvtt-me5e/releases/latest/download/module.json",
+	"download": "https://github.com/sparkcity/fvtt-me5e/releases/latest/download/module.zip",
+	"readme": "https://github.com/sparkcity/fvtt-me5e/blob/master/README.md"
+  }

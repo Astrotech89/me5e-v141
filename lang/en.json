@@ -1,0 +1,67 @@
+{
+    "ME5E.SkillElectronics": "Electronics",
+    "ME5E.SkillEngineering": "Engineering",
+    "ME5E.SkillScience": "Science",
+    "ME5E.SkillVehicleHandling": "Vehicle Handling",
+
+    "ME5E.EquipTypeProgram": "Program",
+    "ME5E.EquipTypeArmorMod": "Armor Mod",
+    "ME5E.EquipTypeWeaponMod": "Weapon Mod",
+    "ME5E.EquipTypeBodyArmor": "Body Armor",
+
+    "ME5E.ConsumTypeSUProgram": "Body Armor",
+    "ME5E.ConsumTypeGrenade": "Grenade",
+    "ME5E.ConsumTypeNarcotic": "Narcotic",
+
+    "ME5E.SpSchBiotics": "Biotics",
+    "ME5E.SpSchTech": "Tech",
+    "ME5E.SpSchCombat": "Combat Powers",
+
+    "ME5E.WeaponTypeAssault" : "Assault Rifle",
+    "ME5E.WeaponTypeHeavyPistol" : "Heavy Pistol",
+    "ME5E.WeaponTypeSMG" : "SMG",
+    "ME5E.WeaponTypeShotgun" : "Shotgun",
+    "ME5E.WeaponTypeSniper" : "Sniper Rifle",
+    "ME5E.WeaponTypeHeavy" : "Heavy Weapon",
+
+    "ME5E.WeaponPropArc": "Arc",
+    "ME5E.WeaponPropBurst": "Burst Fire",
+    "ME5E.WeaponPropDouble": "Double Tap",
+    "ME5E.WeaponPropHeat": "Heat",
+    "ME5E.WeaponPropHip": "Hip Fire",
+    "ME5E.WeaponPropSilent": "Silent",
+    "ME5E.WeaponPropRecoil": "Recoil",
+
+    "ME5E.Currency": "Credits",
+
+    "ME5E.CondTypeIndoc": "Indoctrinated",
+    "ME5E.CondTypeLift": "Lifted",
+    "ME5E.CondTypePrime": "Primed",
+    "ME5E.CondTypeTarget": "Targeting",
+
+    "ME5E.ToolChemist": "Chemist's Supplies",
+    "ME5E.ToolSSN": "Starship System (Navigation)",
+    "ME5E.ToolBrewer": "Brewer's Supplies",
+    "ME5E.ToolArmWork": "Armorsmith's Workbench",
+    "ME5E.ToolCook": "Cook's Utensils",
+    "ME5E.ToolHack": "Hacking Tools",
+    "ME5E.ToolMed": "Medical Kit",
+    "ME5E.ToolPaint": "Painter's Supplies",
+    "ME5E.ToolSSD": "Starship Systems (Drive)",
+    "ME5E.ToolSSH": "Starship Systems (Helm)",
+    "ME5E.ToolSSSSC": "Starship Systems (SSC)",
+    "ME5E.ToolSSEWS": "Starship Systems (EWS)",
+    "ME5E.ToolSSW": "Starship Systems (Weapons)",
+    "ME5E.ToolTailor": "Tailor's Tools",
+    "ME5E.ToolTinker": "Tinker's Tools",
+    "ME5E.ToolWeapWork": "Weaponsmith's Workbench",
+
+    "ME5E.RepParagon": "Paragon",
+    "ME5E.RepRenegade": "Renegade",
+
+    "ME5E.HeaderShields": "Shields",
+    "ME5E.HeaderShieldRegen": "Shield Regen."
+
+
+
+}
