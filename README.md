@@ -37,4 +37,17 @@ Due to current limitations and a limited amount of time, there is no 'click to r
 ![Image](https://github.com/sparkcity/fvttprojects/blob/master/screenshots/me5e.png?raw=true "ME5e Overview")
 
 
-This will also serve to add resources and 
+This will also serve to add resources and links
+
+Not sure if this helps, but there's this:
+https://github.com/queryluke/masseffect-5e/tree/master/assets/images
+I think nearly all (if not every) image used in the bestiary/weapons/mods/etc are direct links from the mass effect wiki, not stored locally by us
+Ah, here's what you want:
+https://github.com/queryluke/masseffect-5e-data/tree/master/data
+For example, if you click into /armor from there, you can find a list of armor items. Here's an example one:
+https://github.com/queryluke/masseffect-5e-data/blob/master/data/armor/andromeda-elite-helmet.md
+
+Notice the wikia link in the image field. Unfortunately you'd need to go into them link by link and download / copy the reference... Or possibly write a script, depending on what you need.
+Let me know if that helps @Astrotech
+I think there was a google folder of tokens actually
+https://drive.google.com/drive/u/0/folders/10S3R_Tfi4bJ9X2b6-4OI65m9F8fx6i0P
