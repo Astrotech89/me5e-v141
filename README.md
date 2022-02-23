@@ -8,6 +8,11 @@ Initial release is copy of hist v1.9
 * Update to ME5e v1.4
 * Update databases w/ proper imaging and naming conventions
 
+## Extended Goals
+* Create ME5e Game system over module
+    * Make new character sheet similar to TechKinghts Roll20
+* Integrate ME5e character builder game system
+
 
 Beginning of Sparkcity's README
 
