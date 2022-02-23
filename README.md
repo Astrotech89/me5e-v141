@@ -48,7 +48,7 @@ Beginning of Sparkcity's README
 ## Limitations
 Due to current limitations and a limited amount of time, there is no 'click to roll' function for the custom skill of Vehicle Handling. Instead, the place next to Vehicle Handling that says 'undefined' upon creating a new character sheet is a text box that will allow for manual tracking of what the modifier should be. Delete the 'undefined' text and replace with with whatever the modifier should be, positive or negative.
 
-![Image](https://github.com/sparkcity/fvttprojects/blob/master/screenshots/me5e.png?raw=true "ME5e Overview")
+
 
 
 END
