@@ -1,6 +1,15 @@
 This is a framework that was originally created by Sparkcity for the Mass Effect 5e module for Foundry-VTT.
-Initial release is copy of hist v1.3
+Initial release is copy of hist v1.9
 
+## Goals
+* Update to support latest version of Foundry
+    * Identify dependencies
+    * Add/Remove dependencies
+* Update to ME5e v1.4
+* Update databases w/ proper imaging and naming conventions
+
+
+Beginning of Sparkcity's README
 
 [![Foundry](https://img.shields.io/badge/Foundry%40Minimum-0.7.5-green)](https://foundryvtt.com/)
 [![Foundry](https://img.shields.io/badge/Foundry%40CompatibleCore-0.7.7-brightgreen)](https://foundryvtt.com/)
@@ -36,6 +45,8 @@ Due to current limitations and a limited amount of time, there is no 'click to r
 
 ![Image](https://github.com/sparkcity/fvttprojects/blob/master/screenshots/me5e.png?raw=true "ME5e Overview")
 
+
+END
 
 This will also serve to add resources and links
 
