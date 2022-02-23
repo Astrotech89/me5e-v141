@@ -78,9 +78,7 @@
 	  ],
 	"dependencies":[
 		{
-			"name": "metric-system-dnd5e", 
-			 "manifest": "https://gitlab.com/foundry-vtt/foundryvtt-metricsystem-module/raw/master/module.json",
-			 "version": "1.0.1"
+		
 		}
 	],
 	"languages": [
