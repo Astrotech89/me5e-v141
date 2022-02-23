@@ -85,6 +85,7 @@ DND5E.toolProficiencies["herb"] = "Chemist's Supplies";
 DND5E.toolProficiencies["navg"] = "Starship System (Navigation)";
 DND5E.toolProficiencies["pois"] = "Brewer's Supplies"
 DND5E.toolProficiencies["aswb"] = "Armorsmith's Workbench";
+// DND5E.toolProficiencies["cook"] = "Cook's Utensils";
 DND5E.toolProficiencies["h4ck"] = "Hacking Tools";
 DND5E.toolProficiencies["mdcn"] = "Medical Kit";
 DND5E.toolProficiencies["pntr"] = "Painter's Supplies";
