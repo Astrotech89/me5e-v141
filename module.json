@@ -90,12 +90,12 @@
 	],
 
 	"system": "dnd5e",
-	"author": "Parker (sparkcities#2000)",
-	"version": "1.9.0",
+	"author": "Astrotech (astrotech#2000)",
+	"version": "1.9.1",
 	"minimumCoreVersion": "0.7.5",
 	"compatibleCoreVersion": "0.7.7",
-	"url": "https://github.com/sparkcity/fvtt-me5e",
-	"manifest": "https://github.com/sparkcity/fvtt-me5e/releases/latest/download/module.json",
-	"download": "https://github.com/sparkcity/fvtt-me5e/releases/latest/download/module.zip",
-	"readme": "https://github.com/sparkcity/fvtt-me5e/blob/master/README.md"
+	"url": "https://github.com/Astrotech89/ME5e-FoundryVTT",
+	"manifest": "https://github.com/Astrotech89/ME5e-FoundryVTT/blob/main/module.json",
+	"download": "https://github.com/Astrotech89/ME5e-FoundryVTT/blob/main/module.zip",
+	"readme": "https://github.com/Astrotech89/ME5e-FoundryVTT/blob/main/README.md"
   }
