@@ -1,7 +1,7 @@
 {
-	"name": "me5e",
+	"name": "ME5e-FoundryVTT",
 	"title": "ME5e",
-	"description": "A module to add support for ME5e, a futuristic sci-fi setting, to your 5e world. Includes most compendium content from ME5e excluding that which would infringe on copyright.",
+	"description": "A module to add support for Mass Effect 5e, a sci-fi adaptation of the Mass Effect universe to work with the DND5e system.",
 
 	"esmodules": [
 		"./src/me5e.js"
@@ -93,7 +93,7 @@
 	"author": "Astrotech (astrotech#2000)",
 	"version": "1.9.1",
 	"minimumCoreVersion": "0.7.5",
-	"compatibleCoreVersion": "0.7.7",
+	"compatibleCoreVersion": "9",
 	"url": "https://github.com/Astrotech89/ME5e-FoundryVTT",
 	"manifest": "https://github.com/Astrotech89/ME5e-FoundryVTT/blob/main/module.json",
 	"download": "https://github.com/Astrotech89/ME5e-FoundryVTT/blob/main/module.zip",
