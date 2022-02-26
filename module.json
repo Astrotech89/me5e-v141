@@ -74,6 +74,20 @@
 			"system": "dnd5e",
 			"path": "./packs/vehiclesme5e.db",
 			"entity": "Actor"
+		},
+		{
+			"name": "species-me5e-14",
+			"label": "Species (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/species-me5e-14.db",
+			"entity": "Item"
+		},
+		{
+			"name": "racial-features-me5e-14",
+			"label": "Racial Features (ME5e - 1.4 In Progress)",
+			"system": "dnd5e",
+			"path": "./packs/racial-features-me5e-14.db",
+			"entity": "Item"
 		}
 	  ],
 	"dependencies":[
