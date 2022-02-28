@@ -1675,7 +1675,7 @@ input.customskill {
     font-weight: normal;
     line-height: 20px;
     text-align: center;
-    color: #bed0ca;
+    color: white;
     background-color: #1e6490;
 }
 
@@ -1683,6 +1683,6 @@ input.customskill {
     font-family: 'Signika', serif;
     border: 1px solid #3d96cf;
     resize: none;
-    color: #bed0ca;
+    color: white;
     background-color: #1e6490;
 }
