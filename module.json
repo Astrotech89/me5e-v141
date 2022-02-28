@@ -56,7 +56,7 @@
 		},
 		{
 			"name": "racial-features-me5e",
-			"label": "Racial Features (ME5e)",
+			"label": "Racial Features (Retired Module)",
 			"system": "dnd5e",
 			"path": "./packs/racial-features-me5e.db",
 			"entity": "Item"
@@ -84,7 +84,7 @@
 		},
 		{
 			"name": "racial-features-me5e-14",
-			"label": "Racial Features (ME5e - 1.4 In Progress)",
+			"label": "Racial Features (ME5e)",
 			"system": "dnd5e",
 			"path": "./packs/racial-features-me5e-14.db",
 			"entity": "Item"
