@@ -32,11 +32,21 @@ function extendActorData() {
     };
 
     const health = this.data.data.attributes.hp;
+    const shields = this.data.data.attributes.shields;
 
+    // console.log('Before :> ');
+    // console.log(this.data.data);
     if (this.data.type === 'npc' || this.data.type === 'character') {
         health['shields'] = health['shields'] || 0;
         health['shieldsMax'] = health['shieldsMax'] || 0;
         health['shieldsRegen'] = health['shieldsRegen'] || 0;
+
+        //ShieldPoints
+        shields.value = health['shields'];
+        shields.max = health['shieldsMax'];
+        shields.min = health['shieldsRegen'];
+        // console.log('After :> ');
+        // console.log(shields);
     }
 
     return prep.call(this);
@@ -85,6 +95,7 @@ DND5E.toolProficiencies['herb'] = "Chemist's Supplies";
 DND5E.toolProficiencies['navg'] = 'Starship System (Navigation)';
 DND5E.toolProficiencies['pois'] = "Brewer's Supplies";
 DND5E.toolProficiencies['aswb'] = "Armorsmith's Workbench";
+DND5E.toolProficiencies['cook'] = "Cook's Utensils";
 DND5E.toolProficiencies['h4ck'] = 'Hacking Tools';
 DND5E.toolProficiencies['mdcn'] = 'Medical Kit';
 DND5E.toolProficiencies['pntr'] = "Painter's Supplies";
@@ -194,18 +205,19 @@ Hooks.on('renderActorSheet', (app, html, data) => {
                 </li>
 	  `);
 
-    const skillslist = html.find('section.sheet-body').find('ul.skills-list');
-    skillslist.append(`
-		<li class="skill flexrow veh" data-skill="dex">
-			<input type="hidden" name="data.newskills.veh.value" data-dtype="Number">
-			<h4 class="skill-name">Vehicle Handling</h4>
-			<span class="skill-ability custom">Dex</span>
-			<span class="skill-mod custom"><input name="data.newskills.veh.total" type="text" value="${data.data.newskills.veh.total}" data-dtype="String" placeholder="+0"/></span>
-		</li>
-	`);
+    //   const skillslist = html.find('section.sheet-body').find('ul.skills-list');
+    //   skillslist.append(`
+    // 	<li class="skill flexrow veh" data-skill="dex">
+    // 		<input type="hidden" name="data.newskills.veh.value" data-dtype="Number">
+    // 		<h4 class="skill-name">Vehicle Handling</h4>
+    // 		<span class="skill-ability custom">Dex</span>
+    // 		<span class="skill-mod custom"><input name="data.newskills.veh.total" type="text" value="${data.data.newskills.veh.total}" data-dtype="String" placeholder="+0"/></span>
+    // 	</li>
+    // `);
 
     const counters = html.find('div.counters');
     const flags = data.actor.flags.me5e || {};
+
     counters.append(`
 	<div class="counter flexrow paragon">
     <h4>Paragon</h4>
@@ -223,5 +235,17 @@ Hooks.on('renderActorSheet', (app, html, data) => {
       }" data-dtype="Number"/>
     </div>
 	</div>
+	`);
+
+    counters.append(`
+	<div class="counter flexrow paragon">
+    <h4> Indoctrination </h4>
+    <div class="counter-value">
+      <input type="text" name="flags.me5e.indoctrination" placeholder="0" value="${
+          flags.indoctrination ?? 0
+      }" data-dtype="Number"/>
+    </div>
+	</div>
+	
 	`);
 });
