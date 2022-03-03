@@ -216,7 +216,12 @@ input.customskill {
     border: 1px solid #999;
     border-radius: 3px;
     background: rgba(0, 0, 0, 0.3);
-    color: #999;
+    color: rgb(255, 255, 255);
+}
+
+/* This is for inactive fields like languges in the sheet, too low opacity */
+body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
+    opacity: 0.8 !important;
 }
 /* ----------------------------------------- */
 /*  Entity Sheets Specifically               */
@@ -787,7 +792,7 @@ input.customskill {
 }
 .paragon.dnd5e.sheet.actor .counters .counter input[type='text'] {
     height: 20px;
-    max-width: 20px;
+    max-width: 40px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -821,8 +826,9 @@ input.customskill {
 .paragon.dnd5e.sheet.actor .traits label {
     flex: none;
     line-height: 20px;
-    font-weight: bold;
+    font-weight: bold !important;
     margin: 0 10px 0 0;
+    color: white;
 }
 .paragon.dnd5e.sheet.actor .traits select {
     max-width: 200px;
@@ -834,14 +840,14 @@ input.customskill {
     float: right;
     margin-right: 3px;
     text-align: right;
-    color: #999;
+    color: white;
 }
 .paragon.dnd5e.sheet.actor .traits i.fas:hover {
     color: rgb(255, 255, 255);
     text-shadow: 0 0 10px #bed0ca;
 }
 .paragon.dnd5e.sheet.actor .traits .inactive {
-    color: #b2b2b2;
+    color: white;
 }
 .paragon.dnd5e.sheet.actor .tab.features,
 .paragon.dnd5e.sheet.actor .tab.inventory,

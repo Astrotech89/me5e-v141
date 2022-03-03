@@ -71,13 +71,13 @@ input.customskill {
 /* ----------------------------------------- */
 /*  All.renegade.dnd5e Apps                           */
 /* ----------------------------------------- */
-.renegade.dnd5e {
-    /* ----------------------------------------- */
-    /*  Element Styles                           */
-    /* ----------------------------------------- */
-    /* Form Groups */
-    /* Tags */
-}
+/* .renegade.dnd5e { */
+/* ----------------------------------------- */
+/*  Element Styles                           */
+/* ----------------------------------------- */
+/* Form Groups */
+/* Tags */
+/* } */
 
 .renegade.dnd5e.sheet .items-list {
     list-style: none;
@@ -215,8 +215,14 @@ input.customskill {
     border: 1px solid #999;
     border-radius: 3px;
     background: rgba(0, 0, 0, 0.3);
-    color: #999;
+    color: rgb(255, 255, 255);
 }
+
+/* This is for inactive fields like languges in the sheet, too low opacity */
+body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
+    opacity: 0.8 !important;
+}
+
 /* ----------------------------------------- */
 /*  Entity Sheets Specifically               */
 /* ----------------------------------------- */
@@ -297,6 +303,7 @@ input.customskill {
     border-left: none;
     border-radius: 3px;
     background-color: #831e1e;
+    color: white;
     opacity: 0.85;
     border-radius: 5px;
 }
@@ -428,7 +435,7 @@ input.customskill {
 .renegade.dnd5e.sheet .traits .trait-selector {
     flex: 0 0 16px;
     padding: 2px 0;
-    color: #999;
+    color: white;
     font-size: 10px;
 }
 .renegade.dnd5e.sheet .traits .traits-list {
@@ -438,9 +445,10 @@ input.customskill {
     margin: 0;
     padding: 0;
 }
+
 /* ----------------------------------------- */
 /* Trait Selector
-/* ----------------------------------------- */
+  /* ----------------------------------------- */
 #trait-selector .trait-list {
     list-style: none;
     margin: 0;
@@ -782,7 +790,7 @@ input.customskill {
 }
 .renegade.dnd5e.sheet.actor .counters .counter input[type='text'] {
     height: 20px;
-    max-width: 20px;
+    max-width: 40px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -818,6 +826,7 @@ input.customskill {
     line-height: 20px;
     font-weight: bold;
     margin: 0 10px 0 0;
+    color: white;
 }
 .renegade.dnd5e.sheet.actor .traits select {
     max-width: 200px;
@@ -829,14 +838,14 @@ input.customskill {
     float: right;
     margin-right: 3px;
     text-align: right;
-    color: #999;
+    color: white;
 }
 .renegade.dnd5e.sheet.actor .traits i.fas:hover {
     color: #111;
     text-shadow: 0 0 10px #bed0ca;
 }
 .renegade.dnd5e.sheet.actor .traits .inactive {
-    color: #b2b2b2;
+    color: white;
 }
 .renegade.dnd5e.sheet.actor .tab.features,
 .renegade.dnd5e.sheet.actor .tab.inventory,
@@ -1344,7 +1353,7 @@ input.customskill {
 }
 /* ----------------------------------------- */
 /*  Chat Cards
-/* ----------------------------------------- */
+  /* ----------------------------------------- */
 .renegade.dnd5e.chat-card {
     font-style: normal;
     font-size: 12px;
@@ -1653,6 +1662,11 @@ input.customskill {
     text-align: right;
 }
 
+form .notes,
+form .hint {
+    color: #ffffff;
+}
+
 /* Characteristics */
 
 .renegade.dnd5e.sheet.actor.character .characteristics label {
@@ -1669,5 +1683,5 @@ input.customskill {
     font-family: 'Signika', serif;
     border: 1px solid #cf3d3d;
     resize: none;
-    color: #bed0ca;
+    color: white;
 }

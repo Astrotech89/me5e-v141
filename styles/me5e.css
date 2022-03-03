@@ -240,8 +240,14 @@ body.background {
     border: 1px solid #999;
     border-radius: 3px;
     background: rgba(0, 0, 0, 0.3);
-    color: #999;
+    color: rgb(255, 255, 255);
 }
+
+/* This is for inactive fields like languges in the sheet, too low opacity */
+body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
+    opacity: 0.8 !important;
+}
+
 /* ----------------------------------------- */
 /*  Entity Sheets Specifically               */
 /* ----------------------------------------- */
@@ -466,7 +472,7 @@ body.background {
 }
 /* ----------------------------------------- */
 /* Trait Selector
-/* ----------------------------------------- */
+  /* ----------------------------------------- */
 #trait-selector .trait-list {
     list-style: none;
     margin: 0;
@@ -797,7 +803,7 @@ body.background {
 }
 .me5e.dnd5e.sheet.actor .counters .counter input[type='text'] {
     height: 20px;
-    max-width: 20px;
+    max-width: 40px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -833,6 +839,7 @@ body.background {
     line-height: 20px;
     font-weight: bold;
     margin: 0 10px 0 0;
+    color: white;
 }
 .me5e.dnd5e.sheet.actor .traits select {
     max-width: 200px;
@@ -1359,7 +1366,7 @@ body.background {
 }
 /* ----------------------------------------- */
 /*  Chat Cards
-/* ----------------------------------------- */
+  /* ----------------------------------------- */
 .me5e.dnd5e.chat-card {
     font-style: normal;
     font-size: 12px;
@@ -1659,6 +1666,11 @@ body.background {
 .me5e.dnd5e.sheet.actor.vehicle .counters .counter.cargo-cap input {
     max-width: 40px;
     text-align: right;
+}
+
+form .notes,
+form .hint {
+    color: #ffffff;
 }
 
 /* Characteristics */
