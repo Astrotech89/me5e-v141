@@ -228,12 +228,6 @@ input.customskill {
     color: rgb(255, 255, 255);
 }
 
-.paragon.dnd5e.sheet.actor .spellcasting-ability input,
-.paragon.dnd5e.sheet.actor .spellcasting-ability span {
-    flex: 0 0 41px;
-    text-align: center;
-}
-
 /* This is for inactive fields like languges in the sheet, too low opacity */
 body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
     opacity: 0.8 !important;
@@ -1167,7 +1161,7 @@ body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
 }
 .paragon.dnd5e.sheet.actor .spellcasting-ability select {
     margin: 0 5px;
-    flex: 0 0 150px;
+    flex: 0 0 170px !important;
 }
 .paragon.dnd5e.sheet.actor .spellcasting-ability h3.spell-dc {
     flex: 1;

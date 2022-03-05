@@ -1157,7 +1157,7 @@ body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
 }
 .me5e.dnd5e.sheet.actor .spellcasting-ability select {
     margin: 0 5px;
-    flex: 0 0 150px;
+    flex: 0 0 150px !important;
 }
 .me5e.dnd5e.sheet.actor .spellcasting-ability h3.spell-dc {
     flex: 1;
