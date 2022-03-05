@@ -9,9 +9,13 @@
     src: url('../assets/Oxanium-Light.ttf') format('woff2');
 }
 @font-face {
-    font-family: 'Oxanium Bold';
+    font-family: 'Oxanium SemiBold';
     font-style: normal;
     src: url('../assets/Oxanium-Bold.ttf') format('woff2');
+}
+
+.-emu-layout body.-emu .window-app .window-content {
+    font-family: 'Oxanium Bold' !important;
 }
 
 /* ----------------------------------------- */
@@ -80,6 +84,11 @@ input.customskill {
     /* Tags */
 }
 
+.paragon.dnd5e.sheet.actor .sheet-header .summary input,
+.paragon.dnd5e.sheet.actor .sheet-header .summary span {
+    font-family: 'Oxanium Bold' !important;
+}
+
 .paragon.dnd5e.sheet .items-list {
     list-style: none;
     margin: 0;
@@ -87,7 +96,6 @@ input.customskill {
     overflow-y: auto;
     scrollbar-width: thin;
     color: #7a7971;
-    background-color: #1e6490;
 }
 
 .paragon.dnd5e.sheet .items-list .items-header {
@@ -96,9 +104,9 @@ input.customskill {
     padding: 0;
     align-items: center;
     background: rgba(0, 0, 0, 0.05);
-    border: 2px groove #3d96cf;
+    border: 2px groove white !important;
     font-weight: bold;
-    color: #bed0ca;
+    color: white;
 }
 
 .paragon.dnd5e .window-content {
@@ -118,7 +126,7 @@ input.customskill {
 .paragon.dnd5e input[type='text']:hover,
 .paragon.dnd5e input[type='text']:focus {
     border: 1px solid #111;
-    box-shadow: 0 0 8px #bed0ca;
+    box-shadow: 0 0 8px white;
 }
 .paragon.dnd5e input:disabled,
 .paragon.dnd5e select:disabled,
@@ -160,8 +168,9 @@ input.customskill {
 /*dont touch this one vvvv 959595*/
 .paragon.dnd5e .form-group label {
     flex: 2;
-    color: #ffffff;
+    color: white !important;
     font-weight: bold;
+    font-family: 'font-family';
 }
 .paragon.dnd5e .form-group .form-fields {
     display: flex;
@@ -169,6 +178,7 @@ input.customskill {
     flex-wrap: wrap;
     justify-content: flex-start;
 }
+
 .paragon.dnd5e .form-group .form-fields > * {
     flex: 1;
 }
@@ -219,14 +229,15 @@ input.customskill {
     color: rgb(255, 255, 255);
 }
 
+.paragon.dnd5e.sheet.actor .spellcasting-ability input,
+.paragon.dnd5e.sheet.actor .spellcasting-ability span {
+    flex: 0 0 41px;
+    text-align: center;
+}
+
 /* This is for inactive fields like languges in the sheet, too low opacity */
 body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
     opacity: 0.8 !important;
-}
-
-/* This is for the tab color */
-body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
-    border-color: white;
 }
 
 /* ----------------------------------------- */
@@ -303,12 +314,12 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 }
 .paragon.dnd5e.sheet .editor {
     height: 100%;
-    border-bottom: 2px solid #3d96cf;
-    border-right: 2px solid #3d96cf;
+    border-bottom: 2px solid #3d97cf00;
+    border-right: 2px solid #3d97cf00;
     border-top: none;
     border-left: none;
     border-radius: 3px;
-    background-color: #1e6490;
+
     opacity: 0.85;
     border-radius: 5px;
 }
@@ -318,10 +329,10 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 }
 .paragon.dnd5e.sheet .sheet-header {
     flex: 0 0 100px;
-    background-color: #1e6490;
+
     opacity: 0.85;
-    border-bottom: 2px solid #3d96cf;
-    border-right: 2px solid #3d96cf;
+    border-bottom: 2px solid #3d97cf00;
+    border-right: 2px solid #3d97cf00;
     border-radius: 5px;
 
     /* Character Name */
@@ -369,7 +380,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     float: left;
     margin: 2px 0;
     padding: 0;
-    border-right: 2px solid #3d96cf;
+    border-right: 2px solid #3d97cf00;
     line-height: 34px;
     color: black;
 }
@@ -383,7 +394,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     font-family: 'Oxanium Bold';
     font-size: 15px;
     font-weight: 700;
-    background-color: #1e6490;
+
     opacity: 0.85;
     border-radius: 5px;
 }
@@ -393,10 +404,11 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     line-height: 32px;
     margin: 0 24px;
     border-bottom: 3px solid white !important;
+    font-family: 'Oxanium Bold' !important;
 }
 /*change color for: line under active tab*/
 .paragon.dnd5e.sheet .sheet-navigation .item.active {
-    border-bottom: 3px solid #bed0ca;
+    border-bottom: 3px solid white;
 }
 .paragon.dnd5e.sheet .sheet-body {
     flex: 1;
@@ -421,6 +433,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     margin: 0 6px 0 0;
     border-bottom: 3px solid white !important;
     white-space: nowrap;
+    font-family: 'Oxanium Bold' !important;
 }
 .paragon.dnd5e.sheet .filter-list .filter-item:last-child {
     margin: 0;
@@ -432,7 +445,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 }
 /*change text shadow for: active filter bar color*/
 .paragon.dnd5e.sheet .filter-list .filter-item.active {
-    border-bottom: 3px solid #bed0ca;
+    border-bottom: 3px solid white;
 }
 .paragon.dnd5e.sheet .traits {
     margin: 5px 0 0;
@@ -496,6 +509,32 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     /*  TinyMCE                                  */
     /* ----------------------------------------- */
 }
+
+.dnd5e.sheet .effects .item .effect-source,
+.dnd5e.sheet .effects .item .effect-duration,
+.dnd5e.sheet .effects .item .effect-controls {
+    text-align: center;
+    border-left: 1px solid #ffffff !important;
+    border-right: 1px solid #ffffff !important;
+    font-size: 12px;
+}
+
+.paragon.dnd5e.sheet.actor .sheet-header .summary input,
+.paragon.dnd5e.sheet.actor .sheet-header .summary span {
+    font-family: 'Oxanium Bold' !important;
+}
+
+.paragon.dnd5e.sheet.actor.character
+    .sheet-header
+    .charlevel
+    .paragon.dnd5e.sheet.actor
+    .sheet-header
+    img.profile {
+    flex: 0 0 160px;
+    max-width: 160px;
+    height: 160px;
+}
+
 .paragon.dnd5e.sheet.actor .sheet-header img.profile {
     flex: 0 0 160px;
     max-width: 160px;
@@ -509,6 +548,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 .paragon.dnd5e.sheet.actor .sheet-header h1.charname input {
     height: 40px;
     margin: 10px 0;
+    font-family: 'Oxanium Bold' !important;
 }
 .paragon.dnd5e.sheet.actor .sheet-header .header-exp {
     flex: 0 0 150px;
@@ -519,9 +559,9 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 }
 .paragon.dnd5e.sheet.actor .sheet-header .summary {
     height: 30px;
-    border-bottom: 2px solid #3d96cf;
+    border-bottom: 2px solid #3d97cf00;
     font-size: 18px;
-    color: #bed0ca;
+    color: white;
 }
 .paragon.dnd5e.sheet.actor .sheet-header .summary input,
 .paragon.dnd5e.sheet.actor .sheet-header .summary span {
@@ -537,7 +577,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     height: 70px;
     margin: 0;
     border: none;
-    border-right: 2px solid #3d96cf;
+    border-right: 2px solid #3d97cf00;
     border-radius: 0;
     color: white;
 }
@@ -572,14 +612,14 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     font-size: 15px;
     font-weight: 700;
     font-size: 16px;
-    color: #bed0ca;
-    border-bottom: 1px solid #bed0ca;
+    color: white;
+    border-bottom: 1px solid white;
 }
 .paragon.dnd5e.sheet.actor .tab.attributes {
     overflow: hidden;
-    border-bottom: 2px solid #3d96cf;
-    border-right: 2px solid #3d96cf;
-    background-color: #1e6490;
+    border-bottom: 2px solid #3d97cf00;
+    border-right: 2px solid #3d97cf00;
+
     opacity: 0.85;
     border-top: none;
     border-left: none;
@@ -588,21 +628,21 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 .paragon.dnd5e.sheet.actor ul.attributes {
     flex: 0 0 60px;
     list-style: none;
-    color: #bed0ca;
+    color: white;
     margin: 0;
     padding: 0;
 }
 .paragon.dnd5e.sheet.actor ul.attributes li.attribute {
     height: 70px;
     margin: 0 5px 0 0;
-    border: 2px solid #3d96cf;
+    border: 2px solid #ffffff2e !important;
     border-radius: 4px;
     text-align: center;
     color: white;
 }
 .paragon.dnd5e.sheet.actor ul.attributes li.attribute:last-child {
     margin: 0;
-    color: #bed0ca;
+    color: white;
 }
 .paragon.dnd5e.sheet.actor ul.attributes li.attribute .attribute-value {
     display: flex;
@@ -613,12 +653,12 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     font-family: 'Oxanium Light';
     font-size: 15px;
     font-weight: 700;
-    color: #bed0ca;
+    color: white;
 }
 .paragon.dnd5e.sheet.actor ul.attributes li.attribute .attribute-value > * {
     font-weight: 400;
     font-size: 24px;
-    color: #bed0ca;
+    color: white;
 }
 .paragon.dnd5e.sheet.actor
     ul.attributes
@@ -627,11 +667,11 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     input {
     flex: 0 0 40%;
     font-size: 18px;
-    color: #bed0ca;
+    color: white;
 }
 /*change color for: spell dc text, modifier text*/
 .paragon.dnd5e.sheet.actor ul.attributes li.attribute .attribute-footer {
-    color: #bed0ca;
+    color: white;
     flex: 0 0 18px;
     margin-top: -1px;
     line-height: 18px;
@@ -649,8 +689,8 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     font-family: 'Oxanium Bold';
     font-size: 15px;
     font-weight: 700;
-    border-bottom: 2px solid #3d96cf;
-    border-right: 2px solid #3d96cf;
+    border-bottom: 2px solid #3d97cf00;
+    border-right: 2px solid #3d97cf00;
     border-top: none;
     border-left: none;
     border-radius: 3px;
@@ -659,7 +699,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 .paragon.dnd5e.sheet.actor .ability-scores .ability {
     height: 70px;
     text-align: center;
-    border-bottom: 2px solid #3d96cf;
+    border-bottom: 2px solid #3d97cf00;
 }
 .paragon.dnd5e.sheet.actor .ability-scores .ability:last-child {
     border-bottom: none;
@@ -675,7 +715,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 .paragon.dnd5e.sheet.actor .ability-scores .ability .ability-modifiers {
     height: 24px;
     margin: -8px 0 0;
-    color: #bed0ca;
+    color: white;
 }
 .paragon.dnd5e.sheet.actor
     .ability-scores
@@ -691,16 +731,16 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     height: 22px;
     line-height: 22px;
     font-size: 16px;
-    border-bottom: 2px solid #3d96cf;
+    border-bottom: 2px solid #3d97cf00;
     border-top: 2px solid #3d96cf;
-    border-right: 2px solid #3d96cf;
+    border-right: 2px solid #3d97cf00;
 }
 .paragon.dnd5e.sheet.actor
     .ability-scores
     .ability
     .ability-modifiers
     span.ability-mod {
-    border-right: 2px solid #3d96cf;
+    border-right: 2px solid #3d97cf00;
 }
 .paragon.dnd5e.sheet.actor
     .ability-scores
@@ -737,8 +777,10 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     list-style: none;
     margin: 0 5px 0;
     padding: 3px 0 2px;
-    border-bottom: 2px solid #3d96cf;
-    border-right: 2px solid #3d96cf;
+    border-bottom: 2px solid #3d97cf00;
+    border-right: 2px solid #3d97cf00;
+    font-family: 'Oxanium Bold' !important;
+    color: white;
     border-left: none;
     border-top: none;
     border-radius: 5px;
@@ -776,7 +818,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     flex: none;
     padding: 5px 0;
     margin: 0;
-    border-bottom: 2px solid #3d96cf;
+    border-bottom: 2px solid #3d97cf00;
 }
 .paragon.dnd5e.sheet.actor .counters .counter {
     height: 20px;
@@ -818,7 +860,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     padding: 0 5px 0 3px;
     overflow-y: auto;
     scrollbar-width: thin;
-    border-right: 2px solid #3d96cf;
+    border-right: 2px solid #3d97cf00;
     border-radius: 5px;
 }
 .paragon.dnd5e.sheet.actor .traits .form-group,
@@ -833,6 +875,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     flex: none;
     line-height: 20px;
     font-weight: bold !important;
+    font-family: 'Oxanium Bold' !important;
     margin: 0 10px 0 0;
     color: white;
 }
@@ -850,7 +893,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 }
 .paragon.dnd5e.sheet.actor .traits i.fas:hover {
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 10px #bed0ca;
+    text-shadow: 0 0 10px white;
 }
 .paragon.dnd5e.sheet.actor .traits .inactive {
     color: white;
@@ -860,15 +903,16 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 .paragon.dnd5e.sheet.actor .tab.spellbook {
     overflow-y: hidden;
 
-    border-bottom: 2px solid #3d96cf;
-    border-right: 2px solid #3d96cf;
+    border-bottom: 2px solid #3d97cf00;
+    border-right: 2px solid #3d97cf00;
     border-top: none;
     border-left: none;
     border-radius: 3px;
-    background-color: #1e6490;
+
     opacity: 0.85;
     border-radius: 5px;
 }
+
 .paragon.dnd5e.sheet.actor .inventory-filters {
     margin: 0 8px;
     flex: 0 0 20px;
@@ -904,7 +948,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 .paragon.dnd5e.sheet.actor .inventory-list .item {
     line-height: 30px;
     padding: 0 2px;
-    border-bottom: 1px solid #c9c7b8;
+    border-bottom: 1px solid white !important;
 }
 .paragon.dnd5e.sheet.actor .inventory-list .item:last-child {
     border-bottom: none;
@@ -921,7 +965,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 }
 .paragon.dnd5e.sheet.actor .inventory-list .item .item-name h4 {
     margin: 0;
-    font-weight: bold;
+    /* font-weight: bold; */
     white-space: nowrap;
     overflow-x: hidden;
 }
@@ -960,8 +1004,8 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     margin: 2px 0;
     padding: 0;
     background: rgba(0, 0, 0, 0.05);
-    border-bottom: 2px solid #3d96cf;
-    border-right: 2px solid #3d96cf;
+    border-bottom: 2px solid #3d97cf00;
+    border-right: 2px solid #3d97cf00;
     border-top: none;
     border-left: none;
     border-radius: 3px;
@@ -985,13 +1029,14 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 }
 .paragon.dnd5e.sheet.actor .inventory-list .item-detail {
     flex: 0 0 70px;
-    font-size: 12px;
+    font-size: 11px;
     color: white;
     text-align: center;
-    border-right: 1px solid #c9c7b8;
+    border-right: 1px solid white !important;
     word-break: break-word;
     white-space: nowrap;
     overflow: hidden;
+    font-family: 'Oxanium Bold';
 }
 .paragon.dnd5e.sheet.actor .inventory-list .item-detail:last-child {
     border-right: none;
@@ -999,10 +1044,15 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 .paragon.dnd5e.sheet.actor .inventory-list .item-detail.item-action {
     flex: 0 0 100px;
 }
+
+.dnd5e.sheet .items-list .items-header h3 {
+    color: white;
+}
+
 .paragon.dnd5e.sheet.actor .inventory-list .item-weight {
     flex: 0 0 60px;
-    border-left: 1px solid #c9c7b8;
-    border-right: 1px solid #c9c7b8;
+    border-left: 1px solid white !important;
+    border-right: 1px solid white !important;
 }
 .paragon.dnd5e.sheet.actor .inventory-list .item-list {
     list-style: none;
@@ -1034,10 +1084,11 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 }
 .paragon.dnd5e.sheet.actor .inventory-list .item-controls a {
     /* flex: 0 0 22px; */
-    margin-left: 15px;
-    font-size: 12px;
-    text-align: start;
+    /* margin-left: 10%; */
+    font-size: 10px;
+    text-align: center;
     color: white;
+    font-family: 'Oxanium Bold';
 }
 .paragon.dnd5e.sheet.actor .inventory-list .item-summary {
     flex: 0 0 100%;
@@ -1073,7 +1124,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     line-height: 12px;
     text-align: right;
     color: #eee;
-    text-shadow: 0 0 5px #bed0ca;
+    text-shadow: 0 0 5px white;
 }
 .paragon.dnd5e.sheet.actor .encumbrance .encumbrance-breakpoint {
     display: block;
@@ -1113,7 +1164,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 }
 .paragon.dnd5e.sheet.actor .spellcasting-ability input,
 .paragon.dnd5e.sheet.actor .spellcasting-ability span {
-    flex: 0 0 32px;
+    flex: 0 0 42px;
     text-align: center;
 }
 .paragon.dnd5e.sheet.actor .spellcasting-ability select {
@@ -1384,7 +1435,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 }
 .paragon.dnd5e.chat-card .card-header h3:hover {
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 10px #bed0ca;
+    text-shadow: 0 0 10px white;
 }
 .paragon.dnd5e.chat-card .card-content {
     margin: 5px 0;
@@ -1486,12 +1537,14 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     font-size: 18px;
     color: white;
     white-space: nowrap;
+    font-family: 'Oxanium Bold' !important;
 }
 .paragon.dnd5e.sheet.actor.character .sheet-header .experience {
     flex: 0 0 32px;
     margin-bottom: -5px;
     align-items: center;
     font-size: 18px;
+    font-family: 'Oxanium Bold' !important;
 }
 /*edit color to change XP goal text*/
 .paragon.dnd5e.sheet.actor.character .sheet-header .experience span.max {
@@ -1549,7 +1602,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
 .paragon.dnd5e.sheet.actor.character .resource .attribute-value label.recharge {
     height: 32px;
     position: relative;
-    font-family: 'Signika', sans-serif;
+    font-family: 'font-family', sans-serif;
     font-size: 11px;
     text-align: center;
     color: #959595;
@@ -1689,13 +1742,11 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     line-height: 20px;
     text-align: center;
     color: white;
-    background-color: #1e6490;
 }
 
 .paragon.dnd5e.sheet.actor.character .characteristics textarea {
-    font-family: 'Signika', serif;
+    font-family: 'Oxanium Bold', serif;
     border: 1px solid #3d96cf;
     resize: none;
     color: white;
-    background-color: #1e6490;
 }
