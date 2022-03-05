@@ -223,6 +223,12 @@ input.customskill {
 body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
     opacity: 0.8 !important;
 }
+
+/* This is for the tab color */
+body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
+    border-color: white;
+}
+
 /* ----------------------------------------- */
 /*  Entity Sheets Specifically               */
 /* ----------------------------------------- */
@@ -386,7 +392,7 @@ body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
     height: 30px;
     line-height: 32px;
     margin: 0 24px;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid white !important;
 }
 /*change color for: line under active tab*/
 .paragon.dnd5e.sheet .sheet-navigation .item.active {
@@ -413,7 +419,7 @@ body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
     text-align: center;
     font-size: 12px;
     margin: 0 6px 0 0;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid white !important;
     white-space: nowrap;
 }
 .paragon.dnd5e.sheet .filter-list .filter-item:last-child {
@@ -587,12 +593,12 @@ body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
     padding: 0;
 }
 .paragon.dnd5e.sheet.actor ul.attributes li.attribute {
-    height: 60px;
+    height: 70px;
     margin: 0 5px 0 0;
     border: 2px solid #3d96cf;
     border-radius: 4px;
     text-align: center;
-    color: #bed0ca;
+    color: white;
 }
 .paragon.dnd5e.sheet.actor ul.attributes li.attribute:last-child {
     margin: 0;
@@ -980,7 +986,7 @@ body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
 .paragon.dnd5e.sheet.actor .inventory-list .item-detail {
     flex: 0 0 70px;
     font-size: 12px;
-    color: #b2b2b2;
+    color: white;
     text-align: center;
     border-right: 1px solid #c9c7b8;
     word-break: break-word;
@@ -1027,9 +1033,10 @@ body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
     flex: 4;
 }
 .paragon.dnd5e.sheet.actor .inventory-list .item-controls a {
-    flex: 0 0 22px;
+    /* flex: 0 0 22px; */
+    margin-left: 15px;
     font-size: 12px;
-    text-align: center;
+    text-align: start;
     color: #b2b2b2;
 }
 .paragon.dnd5e.sheet.actor .inventory-list .item-summary {
