@@ -1037,7 +1037,7 @@ body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
     margin-left: 15px;
     font-size: 12px;
     text-align: start;
-    color: #b2b2b2;
+    color: white;
 }
 .paragon.dnd5e.sheet.actor .inventory-list .item-summary {
     flex: 0 0 100%;
