@@ -622,7 +622,7 @@ body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
 .renegade.dnd5e.sheet.actor ul.attributes li.attribute {
     height: 70px;
     margin: 0 5px 0 0;
-    border: 2px solid #ffffff2e !important;
+    /* border: 2px solid #cf3d3d; */
     border-radius: 4px;
     text-align: center;
 }
