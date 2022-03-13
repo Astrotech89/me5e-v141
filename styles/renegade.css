@@ -1013,14 +1013,14 @@ body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
 }
 .renegade.dnd5e.sheet.actor .inventory-list .item-detail {
     flex: 0 0 70px;
-    font-size: 11px;
+    font-size: 12px;
     color: white;
     text-align: center;
     border-right: 1px solid white !important;
     word-break: break-word;
     white-space: nowrap;
     overflow: hidden;
-    font-family: 'Oxanium Bold';
+    font-family: 'Oxanium Bold' !important;
 }
 .renegade.dnd5e.sheet.actor .inventory-list .item-detail:last-child {
     border-right: none;
@@ -1072,7 +1072,7 @@ body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
     font-size: 10px;
     text-align: center;
     color: white;
-    font-family: 'Oxanium Bold';
+    font-family: 'Oxanium Bold' !important;
 }
 .renegade.dnd5e.sheet.actor .inventory-list .item-summary {
     flex: 0 0 100%;
@@ -1080,6 +1080,7 @@ body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
     line-height: 16px;
     padding: 0.25em 0.5em;
     border-top: 1px solid #c9c7b8;
+    font-family: 'Oxanium Bold' !important;
 }
 .renegade.dnd5e.sheet.actor .encumbrance {
     flex: 0 0 12px;
