@@ -32,7 +32,7 @@ function extendActorData() {
     };
 
     const health = this.data.data.attributes.hp;
-    const shields = this.data.data.attributes.shields;
+    //const shields = this.data.data.attributes.shields;
 
     if (this.data.type === 'npc' || this.data.type === 'character') {
         health['shields'] = health['shields'] || 0;
@@ -40,9 +40,9 @@ function extendActorData() {
         health['shieldsRegen'] = health['shieldsRegen'] || 0;
 
         //ShieldPoints
-        shields.value = health['shields'];
-        shields.max = health['shieldsMax'];
-        shields.min = health['shieldsRegen'];
+        //shields.value = health['shields'];
+        //shields.max = health['shieldsMax'];
+        //shields.min = health['shieldsRegen'];
     }
 
     return prep.call(this);
