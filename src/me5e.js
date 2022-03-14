@@ -34,8 +34,6 @@ function extendActorData() {
     const health = this.data.data.attributes.hp;
     const shields = this.data.data.attributes.shields;
 
-    // console.log('Before :> ');
-    // console.log(this.data.data);
     if (this.data.type === 'npc' || this.data.type === 'character') {
         health['shields'] = health['shields'] || 0;
         health['shieldsMax'] = health['shieldsMax'] || 0;
@@ -45,8 +43,6 @@ function extendActorData() {
         shields.value = health['shields'];
         shields.max = health['shieldsMax'];
         shields.min = health['shieldsRegen'];
-        // console.log('After :> ');
-        // console.log(shields);
     }
 
     return prep.call(this);
@@ -215,30 +211,33 @@ Hooks.on('renderActorSheet', (app, html, data) => {
     // 	</li>
     // `);
 
+    const col = html
+        .find('section.center-pane.flexcol')
+        .find('ul.attributes.flexrow');
     const counters = html.find('div.counters');
     const flags = data.actor.flags.me5e || {};
 
-    counters.append(`
-	<div class="counter flexrow paragon">
-    <h4>Paragon</h4>
-    <div class="counter-value">
-      <input type="text" name="flags.me5e.paragon" placeholder="0" value="${
-          flags.paragon ?? 0
-      }" data-dtype="Number"/>
-    </div>
-	</div>
-	<div class="counter flexrow renegade">
-    <h4>Renegade</h4>
-    <div class="counter-value">
-      <input type="text" name="flags.me5e.renegade" placeholder="0" value="${
-          flags.renegade ?? 0
-      }" data-dtype="Number"/>
-    </div>
-	</div>
-	`);
+    // counters.append(`
+    // <div class="counter flexrow paragon">
+    // <h4>Paragon</h4>
+    // <div class="counter-value">
+    //   <input type="text" name="flags.me5e.paragon" placeholder="0" value="${
+    //       flags.paragon ?? 0
+    //   }" data-dtype="Number"/>
+    // </div>
+    // </div>
+    // <div class="counter flexrow renegade">
+    // <h4>Renegade</h4>
+    // <div class="counter-value">
+    //   <input type="text" name="flags.me5e.renegade" placeholder="0" value="${
+    //       flags.renegade ?? 0
+    //   }" data-dtype="Number"/>
+    // </div>
+    // </div>
+    // `);
 
     counters.append(`
-	<div class="counter flexrow paragon">
+	<div class="counter flexrow indoctrination">
     <h4> Indoctrination </h4>
     <div class="counter-value">
       <input type="text" name="flags.me5e.indoctrination" placeholder="0" value="${
@@ -246,6 +245,32 @@ Hooks.on('renderActorSheet', (app, html, data) => {
       }" data-dtype="Number"/>
     </div>
 	</div>
+	
+	`);
+    col.prepend(`
+	
+    <li class="attribute reputation">
+        <h4 class="attribute-name box-title">Reputation</h4>
+        <div class="attribute-value attributable">
+        <input type="text" name="flags.me5e.paragon" placeholder="0" value="${
+            flags.paragon ?? 0
+        }" data-dtype="Number"/>
+            <span class="sep"> / </span>
+            <input type="text" name="flags.me5e.renegade" placeholder="0" value="${
+                flags.renegade ?? 0
+            }" data-dtype="Number"/>
+            
+        </div>
+
+
+        <footer class="attribute-footer">
+            <span class="spell-dc" >Paragon</span>
+            <span class="sep"> / </span>
+            <span class="spell-dc" >Renegade</span>
+        </footer>
+            
+        
+    </li>
 	
 	`);
 });
