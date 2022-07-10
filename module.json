@@ -27,17 +27,17 @@
 			"entity": "Actor"
 		},
 		{
-			"name": "classes-me5e",
+			"name": "classes-me5e-v141",
 			"label": "Classes (ME5e)",
 			"system": "dnd5e",
-			"path": "./packs/classes-me5e.db",
+			"path": "./packs/classes-me5e-v141.db",
 			"entity": "Item"
 		},
 		{
-			"name": "class-features-me5e",
+			"name": "class-features-me5e-v141",
 			"label": "Class Features (ME5e)",
 			"system": "dnd5e",
-			"path": "./packs/class-features-me5e.db",
+			"path": "./packs/class-features-me5e-v141.db",
 			"entity": "Item"
 		},
 		{
