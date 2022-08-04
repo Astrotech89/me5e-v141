@@ -1,5 +1,5 @@
 {
-	"name": "ME5e-FoundryVTT",
+	"id": "ME5e-FoundryVTT",
 	"title": "ME5e",
 	"description": "A module to add support for Mass Effect 5e, a sci-fi adaptation of the Mass Effect universe to work with the DND5e system.",
 
@@ -55,10 +55,17 @@
 			"entity": "Item"
 		},
 		{
-			"name": "racial-features-me5e",
-			"label": "Racial Features (Retired Module)",
+			"name": "item-weapons-v141",
+			"label": "Item Weapons (ME5e)",
 			"system": "dnd5e",
-			"path": "./packs/racial-features-me5e.db",
+			"path": "./packs/item-weapons-v141.db",
+			"entity": "Item"
+		},
+		{
+			"name": "item-armor-v141",
+			"label": "Item Armor (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/item-armor-v141.db",
 			"entity": "Item"
 		},
 		{
@@ -88,13 +95,15 @@
 			"system": "dnd5e",
 			"path": "./packs/racial-features-me5e-14.db",
 			"entity": "Item"
+		},
+		{
+			"name": "weapon-properties",
+			"label": "Weapon Properties (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/weapon-properties.db",
+			"entity": "JournalEntry"
 		}
 	  ],
-	"dependencies":[
-		{
-		
-		}
-	],
 	"languages": [
 		{
 		  "lang": "en",
