@@ -1,5 +1,5 @@
 {
-	"name": "ME5e-FoundryVTT",
+	"id": "ME5e-FoundryVTT",
 	"title": "ME5e",
 	"description": "A module to add support for Mass Effect 5e, a sci-fi adaptation of the Mass Effect universe to work with the DND5e system.",
 
@@ -17,84 +17,128 @@
 			"label": "Backgrounds (ME5e)",
 			"system": "dnd5e",
 			"path": "./packs/backgrounds-me5e.db",
-			"entity": "Item"
+			"type": "Item"
 		},
 		{
 			"name": "bestiary-me5e",
 			"label": "Bestiary (ME5e)",
 			"system": "dnd5e",
 			"path": "./packs/bestiary-me5e.db",
-			"entity": "Actor"
+			"type": "Actor"
 		},
 		{
 			"name": "classes-me5e-v141",
 			"label": "Classes (ME5e)",
 			"system": "dnd5e",
 			"path": "./packs/classes-me5e-v141.db",
-			"entity": "Item"
+			"type": "Item"
 		},
 		{
 			"name": "class-features-me5e-v141",
 			"label": "Class Features (ME5e)",
 			"system": "dnd5e",
 			"path": "./packs/class-features-me5e-v141.db",
-			"entity": "Item"
+			"type": "Item"
 		},
 		{
 			"name": "feats-me5e",
 			"label": "Feats (ME5e)",
 			"system": "dnd5e",
 			"path": "./packs/feats-me5e.db",
-			"entity": "Item"
+			"type": "Item"
 		},
 		{
 			"name": "item-catalogue-me5e",
 			"label": "Item Catalogue (ME5e)",
 			"system": "dnd5e",
 			"path": "./packs/item-catalogue-me5e.db",
-			"entity": "Item"
+			"type": "Item"
 		},
 		{
-			"name": "racial-features-me5e",
-			"label": "Racial Features (Retired Module)",
+			"name": "item-weapons-v141",
+			"label": "Item Weapons (ME5e)",
 			"system": "dnd5e",
-			"path": "./packs/racial-features-me5e.db",
-			"entity": "Item"
+			"path": "./packs/item-weapons-v141.db",
+			"type": "Item"
+		},
+		{
+			"name": "item-armor-v141",
+			"label": "Item Armor (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/item-armor-v141.db",
+			"type": "Item"
+		},
+		{
+			"name": "item-gear-v141",
+			"label": "Item Gear (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/item-gear-v141.db",
+			"type": "Item"
+		},
+		{
+			"name": "item-mods-v141",
+			"label": "Item Mods (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/item-mods-v141.db",
+			"type": "Item"
 		},
 		{
 			"name": "spells-me5e",
 			"label": "Spells (ME5e)",
 			"system": "dnd5e",
 			"path": "./packs/spells-me5e.db",
-			"entity": "Item"
+			"type": "Item"
+		},
+		{
+			"name": "powers-me5e",
+			"label": "Powers (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/powers-me5e.db",
+			"type": "Item"
 		},
 		{
 			"name": "vehiclesme5e",
 			"label": "Vehicles (ME5e)",
 			"system": "dnd5e",
 			"path": "./packs/vehiclesme5e.db",
-			"entity": "Actor"
+			"type": "Actor"
 		},
 		{
 			"name": "species-me5e-14",
 			"label": "Species (ME5e)",
 			"system": "dnd5e",
 			"path": "./packs/species-me5e-14.db",
-			"entity": "Item"
+			"type": "Item"
 		},
 		{
 			"name": "racial-features-me5e-14",
 			"label": "Racial Features (ME5e)",
 			"system": "dnd5e",
 			"path": "./packs/racial-features-me5e-14.db",
-			"entity": "Item"
+			"type": "Item"
+		},
+		{
+			"name": "weapon-properties",
+			"label": "Weapon Properties (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/weapon-properties.db",
+			"type": "JournalEntry"
+		},
+		{
+			"name": "ME5e-Rules",
+			"label": "ME5e Rules",
+			"system": "dnd5e",
+			"path": "./packs/me5e-rules.db",
+			"type": "JournalEntry"
+		},
+		{
+			"name": "ME5e-RollTables",
+			"label": "ME5e RollTables",
+			"system": "dnd5e",
+			"path": "./packs/me5e-rolls.db",
+			"type": "RollTable"
 		}
 	  ],
-	"dependencies":[
-		{
-		
-		}
-	],
 	"languages": [
 		{
 		  "lang": "en",
@@ -104,7 +148,11 @@
 	],
 
 	"system": "dnd5e",
-	"author": "Astrotech (astrotech#2000)",
+	"authors": [
+					{
+						"name": "Astrotech89"
+					}
+				],
 	"version": "1.9.1",
 	"minimumCoreVersion": "0.7.5",
 	"compatibleCoreVersion": "9",
