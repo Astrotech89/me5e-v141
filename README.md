@@ -18,7 +18,7 @@ Beginning of Sparkcity's README
 
 [![Foundry](https://img.shields.io/badge/Foundry%40Minimum-0.7.5-green)](https://foundryvtt.com/)
 [![Foundry](https://img.shields.io/badge/Foundry%40CompatibleCore-0.7.7-brightgreen)](https://foundryvtt.com/)
-[![DND5E](https://img.shields.io/badge/DnD5E-1.1.1-orange)](https://gitlab.com/foundrynet/dnd5e)
+[![dnd5e](https://img.shields.io/badge/dnd5e-1.1.1-orange)](https://gitlab.com/foundrynet/dnd5e)
 ![GitHub All Releases](https://img.shields.io/github/downloads/sparkcity/fvtt-me5e/total)
 ![GitHub @Latest](https://img.shields.io/github/downloads/sparkcity/fvtt-me5e/latest/total)
 

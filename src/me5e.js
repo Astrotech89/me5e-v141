@@ -1,26 +1,30 @@
-import Actor5e from '../../../systems/dnd5e/module/actor/entity.js';
-import { DND5E } from '../../../systems/dnd5e/module/config.js';
-import ActorSheet5eCharacter from '../../../systems/dnd5e/module/actor/sheets/character.js';
-import ActorSheet5eNPC from '../../../systems/dnd5e/module/actor/sheets/npc.js';
-import ItemSheet5e from '../../../systems/dnd5e/module/item/sheet.js';
+// import Actor5e from '../../../systems/dnd5e/module/actor/entity.js';
+// import { dnd5e } from '../../../systems/dnd5e/module/config.mjs';
+// import ActorSheet5eCharacter from '../../../systems/dnd5e/module/actor/sheets/character.js';
+// import ActorSheet5eNPC from '../../../systems/dnd5e/module/actor/sheets/npc.js';
+// import ItemSheet5e from '../../../systems/dnd5e/module/item/sheet.js';
+
+// New style of imports
+
+// class MyCharacterSheet extends dnd5e.applications.actor.ActorSheet5eCharacter {}
 
 //Changing out deprecated 5e skills to their replacements
-DND5E.skills['arc'] = 'Electronics';
-DND5E.skills['nat'] = 'Engineering';
-DND5E.skills['rel'] = 'Science';
+dnd5e.skills['arc'] = 'Electronics';
+dnd5e.skills['nat'] = 'Engineering';
+dnd5e.skills['rel'] = 'Science';
 //Added the skill of vehicle Handling for foundry to detect
-DND5E.skills['ani'] = 'Vehicle Handling';
+dnd5e.skills['ani'] = 'Vehicle Handling';
 
 //Adding equipment types
-DND5E.equipmentTypes['prog'] = 'Program';
-DND5E.equipmentTypes['armMod'] = 'Armor Mod';
-DND5E.equipmentTypes['wepMod'] = 'Weapon Mod';
-DND5E.equipmentTypes['bodArm'] = 'Body Armor';
+dnd5e.equipmentTypes['prog'] = 'Program';
+dnd5e.equipmentTypes['armMod'] = 'Armor Mod';
+dnd5e.equipmentTypes['wepMod'] = 'Weapon Mod';
+dnd5e.equipmentTypes['bodArm'] = 'Body Armor';
 
 //Changing and adding consumable types
-DND5E.consumableTypes['wand'] = 'Single-Use Program';
-DND5E.consumableTypes['rod'] = 'Grenade';
-DND5E.consumableTypes['narc'] = 'Narcotic';
+dnd5e.consumableTypes['wand'] = 'Single-Use Program';
+dnd5e.consumableTypes['rod'] = 'Grenade';
+dnd5e.consumableTypes['narc'] = 'Narcotic';
 
 const prep = Actor5e.prototype.prepareBaseData;
 function extendActorData() {
@@ -50,61 +54,61 @@ function extendActorData() {
 Actor5e.prototype.prepareBaseData = extendActorData;
 
 //Changing "schools" of magic
-DND5E.spellSchools['abj'] = 'Biotics';
-DND5E.spellSchools['con'] = 'Tech';
-DND5E.spellSchools['div'] = 'Combat Powers';
+dnd5e.spellSchools['abj'] = 'Biotics';
+dnd5e.spellSchools['con'] = 'Tech';
+dnd5e.spellSchools['div'] = 'Combat Powers';
 
 //Adding weapon types
-DND5E.weaponTypes['ars'] = 'Assault Rifle';
-DND5E.weaponTypes['hps'] = 'Heavy Pistol';
-DND5E.weaponTypes['smg'] = 'SMG';
-DND5E.weaponTypes['sht'] = 'Shotgun';
-DND5E.weaponTypes['snp'] = 'Sniper Rifle';
-DND5E.weaponTypes['hvy'] = 'Heavy Weapon';
+dnd5e.weaponTypes['ars'] = 'Assault Rifle';
+dnd5e.weaponTypes['hps'] = 'Heavy Pistol';
+dnd5e.weaponTypes['smg'] = 'SMG';
+dnd5e.weaponTypes['sht'] = 'Shotgun';
+dnd5e.weaponTypes['snp'] = 'Sniper Rifle';
+dnd5e.weaponTypes['hvy'] = 'Heavy Weapon';
 
 //Adding weapon properties
-DND5E.weaponProperties['arc'] = 'Arc';
-DND5E.weaponProperties['bst'] = 'Burst Fire';
-DND5E.weaponProperties['dtp'] = 'Double Tap';
-DND5E.weaponProperties['het'] = 'Heat';
-DND5E.weaponProperties['hip'] = 'Hip Fire';
-DND5E.weaponProperties['snt'] = 'Silent';
-DND5E.weaponProperties['coi'] = 'Recoil';
+dnd5e.weaponProperties['arc'] = 'Arc';
+dnd5e.weaponProperties['bst'] = 'Burst Fire';
+dnd5e.weaponProperties['dtp'] = 'Double Tap';
+dnd5e.weaponProperties['het'] = 'Heat';
+dnd5e.weaponProperties['hip'] = 'Hip Fire';
+dnd5e.weaponProperties['snt'] = 'Silent';
+dnd5e.weaponProperties['coi'] = 'Recoil';
 
 //Changing currencies, all other currencies appear as 0 with no labels
-DND5E.currencies = {
+dnd5e.currencies = {
     pp: 'Credits',
 };
 //Currency conversion option now does nothing to avoid accidental user error
 //(also to avoid mishaps with player curiosity for 'what does this button do?')
 //The answer is nothing. The button does nothing now
-DND5E.currencyConversion = {};
+dnd5e.currencyConversion = {};
 
 //Adding condition types
-DND5E.conditionTypes['indoctrinated'] = 'Indoctrinated';
-DND5E.conditionTypes['lifted'] = 'Lifted';
-DND5E.conditionTypes['primed'] = 'Primed';
-DND5E.conditionTypes['targeting'] = 'Targeting';
+dnd5e.conditionTypes['indoctrinated'] = 'Indoctrinated';
+dnd5e.conditionTypes['lifted'] = 'Lifted';
+dnd5e.conditionTypes['primed'] = 'Primed';
+dnd5e.conditionTypes['targeting'] = 'Targeting';
 
 //Changing and adding some tool proficiencies
-DND5E.toolProficiencies['herb'] = "Chemist's Supplies";
-DND5E.toolProficiencies['navg'] = 'Starship System (Navigation)';
-DND5E.toolProficiencies['pois'] = "Brewer's Supplies";
-DND5E.toolProficiencies['aswb'] = "Armorsmith's Workbench";
-DND5E.toolProficiencies['h4ck'] = 'Hacking Tools';
-DND5E.toolProficiencies['mdcn'] = 'Medical Kit';
-DND5E.toolProficiencies['pntr'] = "Painter's Supplies";
-DND5E.toolProficiencies['ssdr'] = 'Starship Systems (Drive)';
-DND5E.toolProficiencies['sshe'] = 'Starship Systems (Helm)';
-DND5E.toolProficiencies['sssc'] = 'Starship Systems (SSC)';
-DND5E.toolProficiencies['ssew'] = 'Starship Systems (EWS)';
-DND5E.toolProficiencies['sswp'] = 'Starship Systems (Weapons)';
-DND5E.toolProficiencies['tail'] = "Tailor's Tools";
-DND5E.toolProficiencies['tink'] = "Tinker's Tools";
-DND5E.toolProficiencies['wswb'] = "Weaponsmith's Workbench";
+dnd5e.toolProficiencies['herb'] = "Chemist's Supplies";
+dnd5e.toolProficiencies['navg'] = 'Starship System (Navigation)';
+dnd5e.toolProficiencies['pois'] = "Brewer's Supplies";
+dnd5e.toolProficiencies['aswb'] = "Armorsmith's Workbench";
+dnd5e.toolProficiencies['h4ck'] = 'Hacking Tools';
+dnd5e.toolProficiencies['mdcn'] = 'Medical Kit';
+dnd5e.toolProficiencies['pntr'] = "Painter's Supplies";
+dnd5e.toolProficiencies['ssdr'] = 'Starship Systems (Drive)';
+dnd5e.toolProficiencies['sshe'] = 'Starship Systems (Helm)';
+dnd5e.toolProficiencies['sssc'] = 'Starship Systems (SSC)';
+dnd5e.toolProficiencies['ssew'] = 'Starship Systems (EWS)';
+dnd5e.toolProficiencies['sswp'] = 'Starship Systems (Weapons)';
+dnd5e.toolProficiencies['tail'] = "Tailor's Tools";
+dnd5e.toolProficiencies['tink'] = "Tinker's Tools";
+dnd5e.toolProficiencies['wswb'] = "Weaponsmith's Workbench";
 
 //Character sheets
-class ME5eCharacterSheet extends ActorSheet5eCharacter {
+class ME5eCharacterSheet extends dnd5e.applications.actor.ActorSheet5eCharacter {
     static get defaultOptions() {
         console.log('~~~~~~~~~~~ME5E CHARACTER SHEET ACTIVE~~~~~~~~~~~');
         const options = super.defaultOptions;
@@ -113,7 +117,7 @@ class ME5eCharacterSheet extends ActorSheet5eCharacter {
     }
 }
 
-class ME5eParagonCharacterSheet extends ActorSheet5eCharacter {
+class ME5eParagonCharacterSheet extends dnd5e.applications.actor.ActorSheet5eCharacter {
     static get defaultOptions() {
         console.log('~~~~~~~~~~~PARAGON CHARACTER SHEET ACTIVE~~~~~~~~~~~');
         const options = super.defaultOptions;
@@ -122,7 +126,7 @@ class ME5eParagonCharacterSheet extends ActorSheet5eCharacter {
     }
 }
 
-class ME5eRenegadeCharacterSheet extends ActorSheet5eCharacter {
+class ME5eRenegadeCharacterSheet extends dnd5e.applications.actor.ActorSheet5eCharacter {
     static get defaultOptions() {
         console.log('~~~~~~~~~~~RENEGADE CHARACTER SHEET ACTIVE~~~~~~~~~~~');
         const options = super.defaultOptions;
