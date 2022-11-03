@@ -1,111 +1,94 @@
-// import Actor5e from '../../../systems/dnd5e/module/actor/entity.js';
-// import { dnd5e } from '../../../systems/dnd5e/module/config.mjs';
-// import ActorSheet5eCharacter from '../../../systems/dnd5e/module/actor/sheets/character.js';
-// import ActorSheet5eNPC from '../../../systems/dnd5e/module/actor/sheets/npc.js';
-// import ItemSheet5e from '../../../systems/dnd5e/module/item/sheet.js';
-
-// New style of imports
-
-// class MyCharacterSheet extends dnd5e.applications.actor.ActorSheet5eCharacter {}
-
 //Changing out deprecated 5e skills to their replacements
-dnd5e.skills['arc'] = 'Electronics';
-dnd5e.skills['nat'] = 'Engineering';
-dnd5e.skills['rel'] = 'Science';
-//Added the skill of vehicle Handling for foundry to detect
-dnd5e.skills['ani'] = 'Vehicle Handling';
+dnd5e.config.skills.arc = {label: "Electronics" , ability: "int"};
+dnd5e.config.skills.nat = {label: "Engineering" , ability: "int"};
+dnd5e.config.skills.rel = {label: "Science" , ability: "int"};
+dnd5e.config.skills.veh = {label: "Vehical Handling" , ability: "dex"};
+// dnd5e.config.skills.ani = None
 
 //Adding equipment types
-dnd5e.equipmentTypes['prog'] = 'Program';
-dnd5e.equipmentTypes['armMod'] = 'Armor Mod';
-dnd5e.equipmentTypes['wepMod'] = 'Weapon Mod';
-dnd5e.equipmentTypes['bodArm'] = 'Body Armor';
+dnd5e.config.equipmentTypes["prog"] = "Program";
+dnd5e.config.equipmentTypes["armMod"] = "Armor Mod";
+dnd5e.config.equipmentTypes["wepMod"] = "Weapon Mod"
+dnd5e.config.equipmentTypes["bodArm"] = "Body Armor"
 
-//Changing and adding consumable types
-dnd5e.consumableTypes['wand'] = 'Single-Use Program';
-dnd5e.consumableTypes['rod'] = 'Grenade';
-dnd5e.consumableTypes['narc'] = 'Narcotic';
 
-const prep = Actor5e.prototype.prepareBaseData;
+// //Changing and adding consumable types
+dnd5e.config.consumableTypes["wand"] = "Single-Use Program"
+dnd5e.config.consumableTypes["rod"] = "Grenade";
+dnd5e.config.consumableTypes["narc"] = "Narcotic";
+
+const prep = dnd5e.documents.Actor5e.prototype.prepareBaseData
 function extendActorData() {
-    const dat = this.data.data;
-    dat['newskills'] = dat['newskills'] || {
-        veh: {
-            value: '',
-        },
-    };
+	let myActorList = game.actors.filter(a => (a.type === 'character' || a.type === 'npc') === true);
+	const dat = this.system.skills
+	const keys =Object.keys(myActorList)
+	keys.forEach((key, index) => {myActorList[key].system.skills.veh.ability = "dex"});
 
-    const health = this.data.data.attributes.hp;
-    //const shields = this.data.data.attributes.shields;
+	const health = this.system.attributes.hp;
+	
+	if (this.type === "npc" || this.type === "character") {
+		health["shields"] = health["shields"] || 0;
+		health["shieldsMax"] = health["shieldsMax"] || 0;
+		health["shieldsRegen"] = health["shieldsRegen"] || 0;
+	}
 
-    if (this.data.type === 'npc' || this.data.type === 'character') {
-        health['shields'] = health['shields'] || 0;
-        health['shieldsMax'] = health['shieldsMax'] || 0;
-        health['shieldsRegen'] = health['shieldsRegen'] || 0;
-
-        //ShieldPoints
-        //shields.value = health['shields'];
-        //shields.max = health['shieldsMax'];
-        //shields.min = health['shieldsRegen'];
-    }
 
     return prep.call(this);
 }
-Actor5e.prototype.prepareBaseData = extendActorData;
 
 //Changing "schools" of magic
-dnd5e.spellSchools['abj'] = 'Biotics';
-dnd5e.spellSchools['con'] = 'Tech';
-dnd5e.spellSchools['div'] = 'Combat Powers';
+dnd5e.config.spellSchools['abj'] = 'Biotics';
+dnd5e.config.spellSchools['con'] = 'Tech';
+dnd5e.config.spellSchools['div'] = 'Combat Powers';
 
 //Adding weapon types
-dnd5e.weaponTypes['ars'] = 'Assault Rifle';
-dnd5e.weaponTypes['hps'] = 'Heavy Pistol';
-dnd5e.weaponTypes['smg'] = 'SMG';
-dnd5e.weaponTypes['sht'] = 'Shotgun';
-dnd5e.weaponTypes['snp'] = 'Sniper Rifle';
-dnd5e.weaponTypes['hvy'] = 'Heavy Weapon';
+dnd5e.config.weaponTypes['ars'] = 'Assault Rifle';
+dnd5e.config.weaponTypes['hps'] = 'Heavy Pistol';
+dnd5e.config.weaponTypes['smg'] = 'SMG';
+dnd5e.config.weaponTypes['sht'] = 'Shotgun';
+dnd5e.config.weaponTypes['snp'] = 'Sniper Rifle';
+dnd5e.config.weaponTypes['hvy'] = 'Heavy Weapon';
 
 //Adding weapon properties
-dnd5e.weaponProperties['arc'] = 'Arc';
-dnd5e.weaponProperties['bst'] = 'Burst Fire';
-dnd5e.weaponProperties['dtp'] = 'Double Tap';
-dnd5e.weaponProperties['het'] = 'Heat';
-dnd5e.weaponProperties['hip'] = 'Hip Fire';
-dnd5e.weaponProperties['snt'] = 'Silent';
-dnd5e.weaponProperties['coi'] = 'Recoil';
+dnd5e.config.weaponProperties['arc'] = 'Arc';
+dnd5e.config.weaponProperties['bst'] = 'Burst Fire';
+dnd5e.config.weaponProperties['dtp'] = 'Double Tap';
+dnd5e.config.weaponProperties['het'] = 'Heat';
+dnd5e.config.weaponProperties['hip'] = 'Hip Fire';
+dnd5e.config.weaponProperties['snt'] = 'Silent';
+dnd5e.config.weaponProperties['coi'] = 'Recoil';
 
 //Changing currencies, all other currencies appear as 0 with no labels
-dnd5e.currencies = {
+dnd5e.config.currencies = {
     pp: 'Credits',
 };
 //Currency conversion option now does nothing to avoid accidental user error
 //(also to avoid mishaps with player curiosity for 'what does this button do?')
 //The answer is nothing. The button does nothing now
-dnd5e.currencyConversion = {};
+dnd5e.config.currencyConversion = {};
 
 //Adding condition types
-dnd5e.conditionTypes['indoctrinated'] = 'Indoctrinated';
-dnd5e.conditionTypes['lifted'] = 'Lifted';
-dnd5e.conditionTypes['primed'] = 'Primed';
-dnd5e.conditionTypes['targeting'] = 'Targeting';
+dnd5e.config.conditionTypes['indoctrinated'] = 'Indoctrinated';
+dnd5e.config.conditionTypes['lifted'] = 'Lifted';
+dnd5e.config.conditionTypes['primed'] = 'Primed';
+dnd5e.config.conditionTypes['targeting'] = 'Targeting';
 
 //Changing and adding some tool proficiencies
-dnd5e.toolProficiencies['herb'] = "Chemist's Supplies";
-dnd5e.toolProficiencies['navg'] = 'Starship System (Navigation)';
-dnd5e.toolProficiencies['pois'] = "Brewer's Supplies";
-dnd5e.toolProficiencies['aswb'] = "Armorsmith's Workbench";
-dnd5e.toolProficiencies['h4ck'] = 'Hacking Tools';
-dnd5e.toolProficiencies['mdcn'] = 'Medical Kit';
-dnd5e.toolProficiencies['pntr'] = "Painter's Supplies";
-dnd5e.toolProficiencies['ssdr'] = 'Starship Systems (Drive)';
-dnd5e.toolProficiencies['sshe'] = 'Starship Systems (Helm)';
-dnd5e.toolProficiencies['sssc'] = 'Starship Systems (SSC)';
-dnd5e.toolProficiencies['ssew'] = 'Starship Systems (EWS)';
-dnd5e.toolProficiencies['sswp'] = 'Starship Systems (Weapons)';
-dnd5e.toolProficiencies['tail'] = "Tailor's Tools";
-dnd5e.toolProficiencies['tink'] = "Tinker's Tools";
-dnd5e.toolProficiencies['wswb'] = "Weaponsmith's Workbench";
+dnd5e.config.toolProficiencies['herb'] = "Chemist's Supplies";
+dnd5e.config.toolProficiencies['navg'] = 'Starship System (Navigation)';
+dnd5e.config.toolProficiencies['pois'] = "Brewer's Supplies";
+dnd5e.config.toolProficiencies['aswb'] = "Armorsmith's Workbench";
+dnd5e.config.toolProficiencies['h4ck'] = 'Hacking Tools';
+dnd5e.config.toolProficiencies['mdcn'] = 'Medical Kit';
+dnd5e.config.toolProficiencies['pntr'] = "Painter's Supplies";
+dnd5e.config.toolProficiencies['ssdr'] = 'Starship Systems (Drive)';
+dnd5e.config.toolProficiencies['sshe'] = 'Starship Systems (Helm)';
+dnd5e.config.toolProficiencies['sssc'] = 'Starship Systems (SSC)';
+dnd5e.config.toolProficiencies['ssew'] = 'Starship Systems (EWS)';
+dnd5e.config.toolProficiencies['sswp'] = 'Starship Systems (Weapons)';
+dnd5e.config.toolProficiencies['tail'] = "Tailor's Tools";
+dnd5e.config.toolProficiencies['tink'] = "Tinker's Tools";
+dnd5e.config.toolProficiencies['wswb'] = "Weaponsmith's Workbench";
 
 //Character sheets
 class ME5eCharacterSheet extends dnd5e.applications.actor.ActorSheet5eCharacter {
@@ -137,40 +120,40 @@ class ME5eRenegadeCharacterSheet extends dnd5e.applications.actor.ActorSheet5eCh
 
 console.log(`Registering character sheets for ME5e Module`);
 
-Actors.registerSheet('dnd5e', ME5eCharacterSheet, {
+Actors.registerSheet('DND5E', ME5eCharacterSheet, {
     types: ['character'],
     makeDefault: true,
 });
 
-Actors.registerSheet('dnd5e', ME5eParagonCharacterSheet, {
+Actors.registerSheet('DND5E', ME5eParagonCharacterSheet, {
     types: ['character'],
     makeDefault: false,
 });
 
-Actors.registerSheet('dnd5e', ME5eRenegadeCharacterSheet, {
+Actors.registerSheet('DND5E', ME5eRenegadeCharacterSheet, {
     types: ['character'],
     makeDefault: false,
 });
 //Other sheets
-class ME5eNPCSheet extends ActorSheet5eNPC {
+class ME5eNPCSheet extends dnd5e.applications.actor.ActorSheet5eNPC {
     static get defaultOptions() {
         const options = super.defaultOptions;
         options.classes.push('me5e');
         return options;
     }
 }
-Actors.registerSheet('dnd5e', ME5eNPCSheet, {
+Actors.registerSheet('DND5E', ME5eNPCSheet, {
     types: ['npc'],
     makeDefault: true,
 });
-class ME5eItemSheet extends ItemSheet5e {
+class ME5eItemSheet extends dnd5e.applications.item.ItemSheet5e {
     static get defaultOptions() {
         const options = super.defaultOptions;
         options.classes.push('me5e');
         return options;
     }
 }
-Items.registerSheet('dnd5e', ME5eItemSheet, {
+Items.registerSheet('DND5E', ME5eItemSheet, {
     types: [
         'spell',
         'weapon',
@@ -204,40 +187,12 @@ Hooks.on('renderActorSheet', (app, html, data) => {
                 </li>
 	  `);
 
-    //   const skillslist = html.find('section.sheet-body').find('ul.skills-list');
-    //   skillslist.append(`
-    // 	<li class="skill flexrow veh" data-skill="dex">
-    // 		<input type="hidden" name="data.newskills.veh.value" data-dtype="Number">
-    // 		<h4 class="skill-name">Vehicle Handling</h4>
-    // 		<span class="skill-ability custom">Dex</span>
-    // 		<span class="skill-mod custom"><input name="data.newskills.veh.total" type="text" value="${data.data.newskills.veh.total}" data-dtype="String" placeholder="+0"/></span>
-    // 	</li>
-    // `);
 
     const col = html
         .find('section.center-pane.flexcol')
         .find('ul.attributes.flexrow');
     const counters = html.find('div.counters');
     const flags = data.actor.flags.me5e || {};
-
-    // counters.append(`
-    // <div class="counter flexrow paragon">
-    // <h4>Paragon</h4>
-    // <div class="counter-value">
-    //   <input type="text" name="flags.me5e.paragon" placeholder="0" value="${
-    //       flags.paragon ?? 0
-    //   }" data-dtype="Number"/>
-    // </div>
-    // </div>
-    // <div class="counter flexrow renegade">
-    // <h4>Renegade</h4>
-    // <div class="counter-value">
-    //   <input type="text" name="flags.me5e.renegade" placeholder="0" value="${
-    //       flags.renegade ?? 0
-    //   }" data-dtype="Number"/>
-    // </div>
-    // </div>
-    // `);
 
     counters.append(`
 	<div class="counter flexrow indoctrination">
