@@ -3,7 +3,8 @@ dnd5e.config.skills.arc = {label: "Electronics" , ability: "int"};
 dnd5e.config.skills.nat = {label: "Engineering" , ability: "int"};
 dnd5e.config.skills.rel = {label: "Science" , ability: "int"};
 dnd5e.config.skills.veh = {label: "Vehical Handling" , ability: "dex"};
-// dnd5e.config.skills.ani = None
+// Deletes animal handling from system
+delete dnd5e.config.skills.ani;
 
 //Adding equipment types
 dnd5e.config.equipmentTypes["prog"] = "Program";
@@ -177,12 +178,12 @@ Hooks.on('renderActorSheet', (app, html, data) => {
 		  		<li class="attribute shields">
                     <h4 class="attribute-name box-title">Shields</h4>
                     <div class="attribute-value multiple">
-                        <input name="data.attributes.hp.shields" type="text" value="${data.data.attributes.hp.shields}" data-dtype="Number" placeholder="5"/>
+                        <input name="system.attributes.hp.shields" type="text" value="${data.system.attributes.hp.shields}" data-dtype="Number" placeholder="5"/>
                         <span class="sep"> / </span>
-                        <input name="data.attributes.hp.shieldsMax" type="text" value="${data.data.attributes.hp.shieldsMax}" data-dtype="Number" placeholder="5"/>
+                        <input name="system.attributes.hp.shieldsMax" type="text" value="${data.system.attributes.hp.shieldsMax}" data-dtype="Number" placeholder="5"/>
                     </div>
                     <footer class="attribute-footer">
-                        <input name="data.attributes.hp.shieldsRegen" type="text" class="shieldsRegen" placeholder="Shield Regen." value="${data.data.attributes.hp.shieldsRegen}" data-dtype="Number"/>
+                        <input name="system.attributes.hp.shieldsRegen" type="text" class="shieldsRegen" placeholder="Shield Regen." value="${data.system.attributes.hp.shieldsRegen}" data-dtype="Number"/>
                     </footer>
                 </li>
 	  `);
@@ -229,6 +230,7 @@ Hooks.on('renderActorSheet', (app, html, data) => {
             
         
     </li>
+
 	
 	`);
 });
