@@ -69,9 +69,15 @@ dnd5e.config.currencies = {
 dnd5e.config.currencyConversion = {};
 
 //Adding condition types
+dnd5e.config.conditionTypes['frozen'] = 'Frozen';
 dnd5e.config.conditionTypes['indoctrinated'] = 'Indoctrinated';
 dnd5e.config.conditionTypes['lifted'] = 'Lifted';
 dnd5e.config.conditionTypes['primed'] = 'Primed';
+dnd5e.config.conditionTypes['primedCold'] = 'Primed: Cold';
+dnd5e.config.conditionTypes['primedFire'] = 'Primed: Fire';
+dnd5e.config.conditionTypes['primedForce'] = 'Primed: Force';
+dnd5e.config.conditionTypes['primedLight'] = 'Primed: Lightning';
+dnd5e.config.conditionTypes['primedNec'] = 'Primed: Necrotic';
 dnd5e.config.conditionTypes['targeting'] = 'Targeting';
 
 //Changing and adding some tool proficiencies
