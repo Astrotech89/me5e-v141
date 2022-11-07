@@ -1,6 +1,6 @@
 {
 	"id": "ME5e-FoundryVTT",
-	"title": "ME5e",
+	"title": "Mass Effect 5e",
 	"description": "A module to add support for Mass Effect 5e, a sci-fi adaptation of the Mass Effect universe to work with the dnd5e system.",
 
 	"esmodules": [
@@ -34,6 +34,13 @@
 			"type": "Item"
 		},
 		{
+			"name": "subclasses-me5e-v141",
+			"label": "Subclasses (ME5e)",
+			"system": "dnd5e",
+			"path": "./packs/subclasses-me5e-v141.db",
+			"type": "Item"
+		},
+		{
 			"name": "class-features-me5e-v141",
 			"label": "Class Features (ME5e)",
 			"system": "dnd5e",
@@ -45,13 +52,6 @@
 			"label": "Feats (ME5e)",
 			"system": "dnd5e",
 			"path": "./packs/feats-me5e.db",
-			"type": "Item"
-		},
-		{
-			"name": "item-catalogue-me5e",
-			"label": "Item Catalogue (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/item-catalogue-me5e.db",
 			"type": "Item"
 		},
 		{
@@ -80,13 +80,6 @@
 			"label": "Item Mods (ME5e)",
 			"system": "dnd5e",
 			"path": "./packs/item-mods-v141.db",
-			"type": "Item"
-		},
-		{
-			"name": "spells-me5e",
-			"label": "Spells (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/spells-me5e.db",
 			"type": "Item"
 		},
 		{
@@ -146,16 +139,45 @@
 		  "path": "lang/en.json"
 		}
 	],
-
-	"system": "dnd5e",
+	"relationhips": {
+		"systems": [
+			{
+				"id": "dnd5e",
+				"type": "system",
+				"compatibility": {
+					"minimum": "2.0.3",
+					"verified": "2.0.3"
+				}
+			}
+		],
+		"requires": [
+			{ "id": "dae", "type": "module" },
+			{ "id": "custom-rarities-and-currencies", "type": "module"}
+		]
+	},
 	"authors": [
 					{
-						"name": "Astrotech89"
+						"name": "Astrotech89",
+						"url": "https://github.com/Astrotech89"
+					},
+					{
+						"name": "bushongj",
+						"url": "https://github.com/bushongj"
+					},
+					{
+						"name": "sparkcity",
+						"url": "https://github.com/sparkcity"
+					},
+					{
+						"name": "marxpark00",
+						"url": "https://github.com/marxpark00"
 					}
 				],
-	"version": "1.9.1",
-	"minimumCoreVersion": "0.7.5",
-	"compatibleCoreVersion": "9",
+	"compatibility": {
+		"minimum": "10.288",
+		"verified": "10.288",
+		"maximum": 10
+	},
 	"url": "https://github.com/Astrotech89/ME5e-FoundryVTT",
 	"manifest": "https://github.com/Astrotech89/ME5e-FoundryVTT/blob/main/module.json",
 	"download": "https://github.com/Astrotech89/ME5e-FoundryVTT/blob/main/module.zip",
