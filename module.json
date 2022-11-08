@@ -5,8 +5,10 @@
   "esmodules": [
     "src/me5e.js"
   ],
-  "flags":{
-    "compatible": ["dnd5e"]
+  "flags": {
+    "compatible": [
+      "dnd5e"
+    ]
   },
   "styles": [
     "styles/me5e.css",
@@ -176,7 +178,7 @@
       "flags": {}
     }
   ],
-  "relationhips": {
+  "relationships": {
     "systems": [
       {
         "id": "dnd5e",
@@ -188,8 +190,16 @@
       }
     ],
     "requires": [
-      { "id": "dae", "type": "module" },
-      { "id": "custom-rarities-and-currencies", "type": "module"}
+      {
+        "id": "dae",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "custom-rarities-and-currencies",
+        "type": "module",
+        "compatibility": {}
+      }
     ]
   },
   "authors": [
