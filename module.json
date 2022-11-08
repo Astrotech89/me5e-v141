@@ -180,7 +180,7 @@
 		"maximum": 10
 	},
 	"url": "https://github.com/Astrotech89/me5e-v141",
-	"manifest": "https://github.com/Astrotech89/me5e-v141/blob/main/module.json",
-	"download": "https://github.com/Astrotech89/me5e-v141/blob/main/module.zip",
-	"readme": "https://github.com/Astrotech89/me5e-v141/blob/main/README.md"
+	"manifest": "https://github.com/Astrotech89/me5e-v141/module.json",
+	"download": "https://github.com/Astrotech89/me5e-v141/module.zip",
+	"readme": "https://github.com/Astrotech89/me5e-v141/README.md"
   }
