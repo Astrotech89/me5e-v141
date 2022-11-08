@@ -3,15 +3,19 @@ Initial release is copy of hist v1.9
 
 ## Goals
 * Update to support latest version of Foundry
-    * Identify dependencies
-    * Add/Remove dependencies
-* Update to ME5e v1.4
-* Update databases w/ proper imaging and naming conventions
+    * Identify dependencies (done)
+    * Add/Remove dependencies (done)
+    * Update to foundry v10 framework (done)
+* Update to ME5e v1.4 (done)
+* Update databases w/ proper imaging and naming conventions (done)
+* Add automation using dae (in progress)
+
+
 
 ## Extended Goals
 * Create ME5e Game system over module
     * Make new character sheet similar to TechKinghts Roll20
-* Integrate ME5e character builder game system
+* Integrate ME5e character builder into game system
 
 <!-- 
 Beginning of Sparkcity's README
