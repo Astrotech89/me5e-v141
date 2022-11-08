@@ -1,6 +1,11 @@
 This is a framework that was originally created by Sparkcity for the Mass Effect 5e module for Foundry-VTT.
 Initial release is copy of hist v1.9
 
+## Next Updates
+   * Update Journals to match n7.world
+   * Update Species compendium to show racial features in description
+
+
 ## Goals
 * Update to support latest version of Foundry
     * Identify dependencies (done)
@@ -9,8 +14,6 @@ Initial release is copy of hist v1.9
 * Update to ME5e v1.4 (done)
 * Update databases w/ proper imaging and naming conventions (done)
 * Add automation using dae (in progress)
-
-
 
 ## Extended Goals
 * Create ME5e Game system over module
