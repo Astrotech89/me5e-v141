@@ -60,7 +60,7 @@ Currently there is no barrier tick tracker on the character sheet.  This will be
 There is also a lot that needs worked on for vehicle character sheets.  Therefore Vehicle compendiums are incomplete but will be worked on.
 
 
-This will also serve to add resources and links
+## Dev Resources
 
 Not sure if this helps, but there's this:
 https://github.com/queryluke/masseffect-5e/tree/master/assets/images
