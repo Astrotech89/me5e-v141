@@ -1,186 +1,224 @@
 {
-	"id": "me5e-v141",
-	"title": "Mass Effect 5e",
-	"description": "A module to add support for Mass Effect 5e, an adaptation of the Mass Effect sci-fi universe to work with the dnd5e system.",
-
-	"esmodules": [
-		"./src/me5e.js"
-	],
-	"styles":[
-		"./styles/me5e.css",
-		"./styles/paragon.css",
-		"./styles/renegade.css"
-	],
-	"packs": [
+  "id": "me5e-v141",
+  "title": "Mass Effect 5e",
+  "description": "A module to add support for Mass Effect 5e, an adaptation of the Mass Effect sci-fi universe to work with the dnd5e system.",
+  "esmodules": [
+    "src/me5e.js"
+  ],
+  "styles": [
+    "styles/me5e.css",
+    "styles/paragon.css",
+    "styles/renegade.css"
+  ],
+  "packs": [
+    {
+      "name": "backgrounds-me5e",
+      "label": "Backgrounds (ME5e)",
+      "system": "dnd5e",
+      "path": "packs/backgrounds-me5e.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "bestiary-me5e",
+      "label": "Bestiary (ME5e)",
+      "system": "dnd5e",
+      "path": "packs/bestiary-me5e.db",
+      "type": "Actor",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "classes-me5e-v141",
+      "label": "Classes (ME5e)",
+      "system": "dnd5e",
+      "path": "packs/classes-me5e-v141.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "subclasses-me5e-v141",
+      "label": "Subclasses (ME5e)",
+      "system": "dnd5e",
+      "path": "packs/subclasses-me5e-v141.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "class-features-me5e-v141",
+      "label": "Class Features (ME5e)",
+      "system": "dnd5e",
+      "path": "packs/class-features-me5e-v141.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "feats-me5e",
+      "label": "Feats (ME5e)",
+      "system": "dnd5e",
+      "path": "packs/feats-me5e.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "item-weapons-v141",
+      "label": "Item Weapons (ME5e)",
+      "system": "dnd5e",
+      "path": "packs/item-weapons-v141.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "item-armor-v141",
+      "label": "Item Armor (ME5e)",
+      "system": "dnd5e",
+      "path": "packs/item-armor-v141.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "item-gear-v141",
+      "label": "Item Gear (ME5e)",
+      "system": "dnd5e",
+      "path": "packs/item-gear-v141.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "item-mods-v141",
+      "label": "Item Mods (ME5e)",
+      "system": "dnd5e",
+      "path": "packs/item-mods-v141.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "powers-me5e",
+      "label": "Powers (ME5e)",
+      "system": "dnd5e",
+      "path": "packs/powers-me5e.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "vehiclesme5e",
+      "label": "Vehicles (ME5e)",
+      "system": "dnd5e",
+      "path": "packs/vehiclesme5e.db",
+      "type": "Actor",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "species-me5e-14",
+      "label": "Species (ME5e)",
+      "system": "dnd5e",
+      "path": "packs/species-me5e-14.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "racial-features-me5e-14",
+      "label": "Racial Features (ME5e)",
+      "system": "dnd5e",
+      "path": "packs/racial-features-me5e-14.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "weapon-properties",
+      "label": "Weapon Properties (ME5e)",
+      "system": "dnd5e",
+      "path": "packs/weapon-properties.db",
+      "type": "JournalEntry",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "ME5e-Rules",
+      "label": "ME5e Rules",
+      "system": "dnd5e",
+      "path": "packs/me5e-rules.db",
+      "type": "JournalEntry",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "ME5e-RollTables",
+      "label": "ME5e RollTables",
+      "system": "dnd5e",
+      "path": "packs/me5e-rolls.db",
+      "type": "RollTable",
+      "private": false,
+      "flags": {}
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "relationhips": {
+	"systems": [
 		{
-			"name": "backgrounds-me5e",
-			"label": "Backgrounds (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/backgrounds-me5e.db",
-			"type": "Item"
-		},
-		{
-			"name": "bestiary-me5e",
-			"label": "Bestiary (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/bestiary-me5e.db",
-			"type": "Actor"
-		},
-		{
-			"name": "classes-me5e-v141",
-			"label": "Classes (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/classes-me5e-v141.db",
-			"type": "Item"
-		},
-		{
-			"name": "subclasses-me5e-v141",
-			"label": "Subclasses (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/subclasses-me5e-v141.db",
-			"type": "Item"
-		},
-		{
-			"name": "class-features-me5e-v141",
-			"label": "Class Features (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/class-features-me5e-v141.db",
-			"type": "Item"
-		},
-		{
-			"name": "feats-me5e",
-			"label": "Feats (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/feats-me5e.db",
-			"type": "Item"
-		},
-		{
-			"name": "item-weapons-v141",
-			"label": "Item Weapons (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/item-weapons-v141.db",
-			"type": "Item"
-		},
-		{
-			"name": "item-armor-v141",
-			"label": "Item Armor (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/item-armor-v141.db",
-			"type": "Item"
-		},
-		{
-			"name": "item-gear-v141",
-			"label": "Item Gear (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/item-gear-v141.db",
-			"type": "Item"
-		},
-		{
-			"name": "item-mods-v141",
-			"label": "Item Mods (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/item-mods-v141.db",
-			"type": "Item"
-		},
-		{
-			"name": "powers-me5e",
-			"label": "Powers (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/powers-me5e.db",
-			"type": "Item"
-		},
-		{
-			"name": "vehiclesme5e",
-			"label": "Vehicles (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/vehiclesme5e.db",
-			"type": "Actor"
-		},
-		{
-			"name": "species-me5e-14",
-			"label": "Species (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/species-me5e-14.db",
-			"type": "Item"
-		},
-		{
-			"name": "racial-features-me5e-14",
-			"label": "Racial Features (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/racial-features-me5e-14.db",
-			"type": "Item"
-		},
-		{
-			"name": "weapon-properties",
-			"label": "Weapon Properties (ME5e)",
-			"system": "dnd5e",
-			"path": "./packs/weapon-properties.db",
-			"type": "JournalEntry"
-		},
-		{
-			"name": "ME5e-Rules",
-			"label": "ME5e Rules",
-			"system": "dnd5e",
-			"path": "./packs/me5e-rules.db",
-			"type": "JournalEntry"
-		},
-		{
-			"name": "ME5e-RollTables",
-			"label": "ME5e RollTables",
-			"system": "dnd5e",
-			"path": "./packs/me5e-rolls.db",
-			"type": "RollTable"
-		}
-	  ],
-	"languages": [
-		{
-		  "lang": "en",
-		  "name": "English",
-		  "path": "lang/en.json"
-		}
-	],
-	"relationhips": {
-		"systems": [
-			{
-				"id": "dnd5e",
-				"type": "system",
-				"compatibility": {
-					"minimum": "2.0.3",
-					"verified": "2.0.3"
-				}
+			"id": "dnd5e",
+			"type": "system",
+			"compatibility": {
+				"minimum": "2.0.3",
+				"verified": "2.0.3"
 			}
-		],
-		"requires": [
-			{ "id": "dae", "type": "module" },
-			{ "id": "custom-rarities-and-currencies", "type": "module"}
-		]
-	},
-	"authors": [
-					{
-						"name": "Astrotech89",
-						"url": "https://github.com/Astrotech89"
-					},
-					{
-						"name": "bushongj",
-						"url": "https://github.com/bushongj"
-					},
-					{
-						"name": "sparkcity",
-						"url": "https://github.com/sparkcity"
-					},
-					{
-						"name": "marxpark00",
-						"url": "https://github.com/marxpark00"
-					}
-				],
-	"version": "0.1.1",
-	"compatibility": {
-		"minimum": "10.288",
-		"verified": "10.288",
-		"maximum": 10
-	},
-	"url": "https://github.com/Astrotech89/me5e-v141",
-	"manifest": "https://github.com/Astrotech89/me5e-v141/module.json",
-	"download": "https://github.com/Astrotech89/me5e-v141/module.zip",
-	"readme": "https://github.com/Astrotech89/me5e-v141/README.md"
-  }
+		}
+	],
+	"requires": [
+		{ "id": "dae", "type": "module" },
+		{ "id": "custom-rarities-and-currencies", "type": "module"}
+	]
+},
+  "authors": [
+    {
+      "name": "Astrotech89",
+      "url": "https://github.com/Astrotech89",
+      "flags": {}
+    },
+    {
+      "name": "bushongj",
+      "url": "https://github.com/bushongj",
+      "flags": {}
+    },
+    {
+      "name": "sparkcity",
+      "url": "https://github.com/sparkcity",
+      "flags": {}
+    },
+    {
+      "name": "marxpark00",
+      "url": "https://github.com/marxpark00",
+      "flags": {}
+    }
+  ],
+  "version": "0.1.1",
+  "compatibility": {
+    "minimum": "10.288",
+    "verified": "10.288",
+    "maximum": "10"
+  },
+  "url": "https://github.com/Astrotech89/me5e-v141",
+  "manifest": "https://github.com/Astrotech89/me5e-v141/module.json",
+  "download": "https://github.com/Astrotech89/me5e-v141/module.zip",
+  "readme": "https://github.com/Astrotech89/me5e-v141/README.md"
+}
