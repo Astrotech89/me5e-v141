@@ -179,8 +179,8 @@
 		"verified": "10.288",
 		"maximum": 10
 	},
-	"url": "https://github.com/Astrotech89/ME5e-FoundryVTT",
-	"manifest": "https://github.com/Astrotech89/ME5e-FoundryVTT/blob/main/module.json",
-	"download": "https://github.com/Astrotech89/ME5e-FoundryVTT/blob/main/module.zip",
-	"readme": "https://github.com/Astrotech89/ME5e-FoundryVTT/blob/main/README.md"
+	"url": "https://github.com/Astrotech89/me5e-v141",
+	"manifest": "https://github.com/Astrotech89/me5e-v141/blob/main/module.json",
+	"download": "https://github.com/Astrotech89/me5e-v141/blob/main/module.zip",
+	"readme": "https://github.com/Astrotech89/me5e-v141/blob/main/README.md"
   }
