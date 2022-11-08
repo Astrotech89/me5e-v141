@@ -5,6 +5,9 @@
   "esmodules": [
     "src/me5e.js"
   ],
+  "flags":{
+    "compatible": ["dnd5e"]
+  },
   "styles": [
     "styles/me5e.css",
     "styles/paragon.css",
@@ -174,21 +177,21 @@
     }
   ],
   "relationhips": {
-	"systems": [
-		{
-			"id": "dnd5e",
-			"type": "system",
-			"compatibility": {
-				"minimum": "2.0.3",
-				"verified": "2.0.3"
-			}
-		}
-	],
-	"requires": [
-		{ "id": "dae", "type": "module" },
-		{ "id": "custom-rarities-and-currencies", "type": "module"}
-	]
-},
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "2.0.3",
+          "verified": "2.0.3"
+        }
+      }
+    ],
+    "requires": [
+      { "id": "dae", "type": "module" },
+      { "id": "custom-rarities-and-currencies", "type": "module"}
+    ]
+  },
   "authors": [
     {
       "name": "Astrotech89",
