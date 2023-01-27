@@ -1,6 +1,10 @@
 This is a framework that was originally created by Sparkcity for the Mass Effect 5e module for Foundry-VTT.
 Initial release is copy of hist v1.9
 
+## Installation 
+Copy this link into the add-on module prompt:
+https://github.com/Astrotech89/me5e-v141/raw/main/module.json
+
 ## Next Updates
    * Update Journals to match n7.world
    * Update Species compendium to show racial features in description
