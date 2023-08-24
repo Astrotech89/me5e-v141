@@ -20,154 +20,205 @@
       "name": "backgrounds-me5e",
       "label": "Backgrounds (ME5e)",
       "system": "dnd5e",
-      "path": "packs/backgrounds-me5e.db",
+      "path": "packs/backgrounds-me5e",
       "type": "Item",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "bestiary-me5e",
       "label": "Bestiary (ME5e)",
       "system": "dnd5e",
-      "path": "packs/bestiary-me5e.db",
+      "path": "packs/bestiary-me5e",
       "type": "Actor",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "classes-me5e-v141",
       "label": "Classes (ME5e)",
       "system": "dnd5e",
-      "path": "packs/classes-me5e-v141.db",
+      "path": "packs/classes-me5e-v141",
       "type": "Item",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "subclasses-me5e-v141",
       "label": "Subclasses (ME5e)",
       "system": "dnd5e",
-      "path": "packs/subclasses-me5e-v141.db",
+      "path": "packs/subclasses-me5e-v141",
       "type": "Item",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "class-features-me5e-v141",
       "label": "Class Features (ME5e)",
       "system": "dnd5e",
-      "path": "packs/class-features-me5e-v141.db",
+      "path": "packs/class-features-me5e-v141",
       "type": "Item",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "feats-me5e",
       "label": "Feats (ME5e)",
       "system": "dnd5e",
-      "path": "packs/feats-me5e.db",
+      "path": "packs/feats-me5e",
       "type": "Item",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "item-weapons-v141",
       "label": "Item Weapons (ME5e)",
       "system": "dnd5e",
-      "path": "packs/item-weapons-v141.db",
+      "path": "packs/item-weapons-v141",
       "type": "Item",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "item-armor-v141",
       "label": "Item Armor (ME5e)",
       "system": "dnd5e",
-      "path": "packs/item-armor-v141.db",
+      "path": "packs/item-armor-v141",
       "type": "Item",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "item-gear-v141",
       "label": "Item Gear (ME5e)",
       "system": "dnd5e",
-      "path": "packs/item-gear-v141.db",
+      "path": "packs/item-gear-v141",
       "type": "Item",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "item-mods-v141",
       "label": "Item Mods (ME5e)",
       "system": "dnd5e",
-      "path": "packs/item-mods-v141.db",
+      "path": "packs/item-mods-v141",
       "type": "Item",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "powers-me5e",
       "label": "Powers (ME5e)",
       "system": "dnd5e",
-      "path": "packs/powers-me5e.db",
+      "path": "packs/powers-me5e",
       "type": "Item",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "vehiclesme5e",
       "label": "Vehicles (ME5e)",
       "system": "dnd5e",
-      "path": "packs/vehiclesme5e.db",
+      "path": "packs/vehiclesme5e",
       "type": "Actor",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "species-me5e-14",
       "label": "Species (ME5e)",
       "system": "dnd5e",
-      "path": "packs/species-me5e-14.db",
+      "path": "packs/species-me5e-14",
       "type": "Item",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "racial-features-me5e-14",
       "label": "Racial Features (ME5e)",
       "system": "dnd5e",
-      "path": "packs/racial-features-me5e-14.db",
+      "path": "packs/racial-features-me5e-14",
       "type": "Item",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "weapon-properties",
       "label": "Weapon Properties (ME5e)",
       "system": "dnd5e",
-      "path": "packs/weapon-properties.db",
+      "path": "packs/weapon-properties",
       "type": "JournalEntry",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "ME5e-Rules",
       "label": "ME5e Rules",
       "system": "dnd5e",
-      "path": "packs/me5e-rules.db",
+      "path": "packs/me5e-rules",
       "type": "JournalEntry",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "ME5e-RollTables",
       "label": "ME5e RollTables",
       "system": "dnd5e",
-      "path": "packs/me5e-rolls.db",
+      "path": "packs/me5e-rolls",
       "type": "RollTable",
-      "private": false,
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "languages": [
@@ -192,11 +243,6 @@
     "requires": [
       {
         "id": "dae",
-        "type": "module",
-        "compatibility": {}
-      },
-      {
-        "id": "custom-rarities-and-currencies",
         "type": "module",
         "compatibility": {}
       }
@@ -224,14 +270,14 @@
       "flags": {}
     }
   ],
-  "version": "0.1.1",
+  "version": "1.0.0",
   "compatibility": {
     "minimum": "10.288",
-    "verified": "10.288",
-    "maximum": "10"
+    "verified": "11.307",
+    "maximum": "11"
   },
   "url": "https://github.com/Astrotech89/me5e-v141",
-  "manifest": "https://github.com/Astrotech89/me5e-v141/raw/main/module.json",
-  "download": "https://github.com/Astrotech89/me5e-v141/raw/main/module.zip",
+  "manifest": "https://github.com/Astrotech89/me5e-v141/releases/latest/download/module.json",
+  "download": "https://github.com/Astrotech89/me5e-v141/releases/latest/download/module.zip",  
   "readme": "https://github.com/Astrotech89/me5e-v141/raw/main/README.md"
 }

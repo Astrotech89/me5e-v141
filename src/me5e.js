@@ -60,9 +60,11 @@ dnd5e.config.weaponProperties['snt'] = 'Silent';
 dnd5e.config.weaponProperties['coi'] = 'Recoil';
 
 //Changing currencies, all other currencies appear as 0 with no labels
-dnd5e.config.currencies = {
-    pp: 'Credits',
-};
+dnd5e.config.currencies.pp = "Credits"
+delete dnd5e.config.currencies.gp
+delete dnd5e.config.currencies.ep
+delete dnd5e.config.currencies.sp
+delete dnd5e.config.currencies.cp
 //Currency conversion option now does nothing to avoid accidental user error
 //(also to avoid mishaps with player curiosity for 'what does this button do?')
 //The answer is nothing. The button does nothing now
@@ -180,16 +182,17 @@ Hooks.on('renderActorSheet', (app, html, data) => {
     const healthdiv = html
         .find('header.sheet-header')
         .find('ul.attributes.flexrow');
+    const flags = data.actor.flags.me5e || {};
     healthdiv.prepend(`
 		  		<li class="attribute shields">
                     <h4 class="attribute-name box-title">Shields</h4>
                     <div class="attribute-value multiple">
-                        <input name="system.attributes.hp.shields" type="text" value="${data.system.attributes.hp.shields}" data-dtype="Number" placeholder="5"/>
+                        <input name="flags.me5e.shields" type="text" value="${flags.shields ?? 0}" data-dtype="Number" placeholder="5"/>
                         <span class="sep"> / </span>
-                        <input name="system.attributes.hp.shieldsMax" type="text" value="${data.system.attributes.hp.shieldsMax}" data-dtype="Number" placeholder="5"/>
+                        <input name="flags.me5e.shieldsMax" type="text" value="${flags.shieldsMax ?? 0}" data-dtype="Number" placeholder="5"/>
                     </div>
                     <footer class="attribute-footer">
-                        <input name="system.attributes.hp.shieldsRegen" type="text" class="shieldsRegen" placeholder="Shield Regen." value="${data.system.attributes.hp.shieldsRegen}" data-dtype="Number"/>
+                        <input name="flags.me5e.shieldsRegen" type="text" class="shieldsRegen" placeholder="Shield Regen." value="${flags.shieldsRegen ?? 0}" data-dtype="Number"/>
                     </footer>
                 </li>
 	  `);
@@ -199,8 +202,6 @@ Hooks.on('renderActorSheet', (app, html, data) => {
         .find('section.center-pane.flexcol')
         .find('ul.attributes.flexrow');
     const counters = html.find('div.counters');
-    const flags = data.actor.flags.me5e || {};
-
     counters.append(`
 	<div class="counter flexrow indoctrination">
     <h4> Indoctrination </h4>
@@ -236,7 +237,6 @@ Hooks.on('renderActorSheet', (app, html, data) => {
             
         
     </li>
-
 	
 	`);
 });
