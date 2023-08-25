@@ -2,12 +2,17 @@ This is a framework that was originally created by Sparkcity for the Mass Effect
 Initial release is copy of hist v1.9
 
 ## Installation 
+Due to the use of the Mass Effect name and the images that go along with items, Foundry has said they won't publish this module as they are a paid service and are understandably worried about copywrite usage.
+I was not paid to make this and all images were found on the internet.  Please refer to disclaimer.
 Copy this link into the add-on module prompt:
-https://github.com/Astrotech89/me5e-v141/raw/main/module.json
+https://github.com/Astrotech89/me5e-v141/releases/latest/download/module.json
+<img width="655" alt="image" src="https://github.com/Astrotech89/me5e-v141/assets/20007225/c6bae125-d40c-48bd-99be-4ca500c0f518">
+
 
 ## Next Updates
    * Update Journals to match n7.world
-   * Update Species compendium to show racial features in description
+   * Work on Barrier ticks
+   * Further work on Shield HP
 
 
 ## Goals
@@ -43,6 +48,8 @@ Beginning of Sparkcity's README
     * ME5e
     * Paragon
     * Renegade
+<img width="627" alt="image" src="https://github.com/Astrotech89/me5e-v141/assets/20007225/aebcc802-706c-4176-ae08-3fd0d42d5cc1">
+
 * Compendiums:
     * Backgrounds
     * Bestiary
@@ -62,7 +69,7 @@ Beginning of Sparkcity's README
 
 Mass Effect 5e is not sanctioned by or affiliated with Electronic Arts Inc, BioWare, Wizards of the Coast, or any other rights-holding company or entity.
 
-Except where otherwise noted, images on this site are from the Mass Effect Wikia and are licensed under a Creative Commons Attribution 4.0 International license.
+Except where otherwise noted, images on this site are from the Mass Effect Wiki and are licensed under a Creative Commons Attribution 4.0 International license.
 
 The Mass Effect 5e website is licensed under GNU General Public License v3.0. The Open Game Content contained within the Player's Manual is licensed under the Open Game License version 1.0a.
 
