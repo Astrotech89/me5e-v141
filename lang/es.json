@@ -1,0 +1,64 @@
+{
+  "ME5E.SkillElectronics": "Electrónica",
+  "ME5E.SkillEngineering": "Ingeniería",
+  "ME5E.SkillScience": "Ciencia",
+  "ME5E.SkillVehicleHandling": "Conducción",
+
+  "ME5E.EquipTypeProgram": "Programa",
+  "ME5E.EquipTypeArmorMod": "Mod. de Armadura",
+  "ME5E.EquipTypeWeaponMod": "Mod. de Arma",
+  "ME5E.EquipTypeBodyArmor": "Armadura",
+
+  "ME5E.ConsumTypeSUProgram": "Programa de Utilidad",
+  "ME5E.ConsumTypeGrenade": "Granada",
+  "ME5E.ConsumTypeNarcotic": "Narcótico",
+
+  "ME5E.SpSchBiotics": "Biótica",
+  "ME5E.SpSchTech": "Tecnología",
+  "ME5E.SpSchCombat": "Poderes de Combate",
+
+  "ME5E.WeaponTypeAssault": "Rifle de Asalto",
+  "ME5E.WeaponTypeHeavyPistol": "Pistola Pesada",
+  "ME5E.WeaponTypeSMG": "SMG",
+  "ME5E.WeaponTypeShotgun": "Escopeta",
+  "ME5E.WeaponTypeSniper": "Francotirador",
+  "ME5E.WeaponTypeHeavy": "Arma Pesada",
+
+  "ME5E.WeaponPropArc": "Arco Eléctrico",
+  "ME5E.WeaponPropBurst": "Ráfaga",
+  "ME5E.WeaponPropDouble": "Doble Tiro",
+  "ME5E.WeaponPropHeat": "Calor",
+  "ME5E.WeaponPropHip": "Disparo desde la Cadera",
+  "ME5E.WeaponPropSilent": "Silenciador",
+  "ME5E.WeaponPropRecoil": "Retroceso",
+
+  "ME5E.Currency": "Créditos",
+
+  "ME5E.CondTypeIndoc": "Indoctrinado",
+  "ME5E.CondTypeLift": "Levantado",
+  "ME5E.CondTypePrime": "Marcado",
+  "ME5E.CondTypeTarget": "Objetivo",
+
+  "ME5E.ToolChemist": "Herramientas de Química",
+  "ME5E.ToolSSN": " Sistemas de Navegación Estelar",
+  "ME5E.ToolBrewer": "Herramientas de Cervecería",
+  "ME5E.ToolArmWork": "Banco de Trabajo de Armadura",
+  "ME5E.ToolCook": "Herramientas de Cocina",
+  "ME5E.ToolHack": "Herramientas de Hacking",
+  "ME5E.ToolMed": "Herramientas Médicas",
+  "ME5E.ToolPaint": "Herramientas de Pintura",
+  "ME5E.ToolSSD": "Sistemas de nave estelar (Navegación)",
+  "ME5E.ToolSSH": "Sistemas de nave estelar (Conducción)",
+  "ME5E.ToolSSSSC": "Sistemas de nave estelar (Sensores, Escáneres y Comunicaciones)",
+  "ME5E.ToolSSEWS": "Sistemas de nave estelar (Herramientas de Sabotaje Electrónico)",
+  "ME5E.ToolSSW": "Sistemas de nave estelar (Armas)",
+  "ME5E.ToolTailor": "Herramientas de Sastre",
+  "ME5E.ToolTinker": "Herramientas de Carpintero",
+  "ME5E.ToolWeapWork": "Banco de Trabajo de Armas",
+
+  "ME5E.RepParagon": "Paragon",
+  "ME5E.RepRenegade": "Renegado",
+
+  "ME5E.HeaderShields": "Escudos",
+  "ME5E.HeaderShieldRegen": "Regen. de Escudos"
+}
