@@ -261,16 +261,6 @@
       "flags": {}
     },
     {
-      "name": "bushongj",
-      "url": "https://github.com/bushongj",
-      "flags": {}
-    },
-    {
-      "name": "sparkcity",
-      "url": "https://github.com/sparkcity",
-      "flags": {}
-    },
-    {
       "name": "marxpark00",
       "url": "https://github.com/marxpark00",
       "flags": {}
@@ -280,7 +270,7 @@
   "compatibility": {
     "minimum": "11",
     "verified": "11.307",
-    "maximum": "11"
+    "maximum": "12"
   },
   "url": "https://github.com/Astrotech89/me5e-v141",
   "manifest": "https://github.com/Astrotech89/me5e-v141/releases/latest/download/module.json",
