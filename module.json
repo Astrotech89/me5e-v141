@@ -268,8 +268,8 @@
   ],
   "version": "1.0.1",
   "compatibility": {
-    "minimum": "11",
-    "verified": "11.307",
+    "minimum": "12",
+    "verified": "12.328",
     "maximum": "12"
   },
   "url": "https://github.com/Astrotech89/me5e-v141",
