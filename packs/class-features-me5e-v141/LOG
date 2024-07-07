@@ -1,5 +1,3 @@
-2024/06/22-21:01:09.147 e4d8 Recovering log #43
-2024/06/22-21:01:09.148 e4d8 Level-0 table #45: started
-2024/06/22-21:01:09.150 e4d8 Level-0 table #45: 32337 bytes OK
-2024/06/22-21:01:09.155 e4d8 Delete type=0 #43
-2024/06/22-21:01:09.155 e4d8 Delete type=3 #42
+2024/07/06-17:51:19.805 9efc Recovering log #55
+2024/07/06-17:51:19.810 9efc Delete type=0 #55
+2024/07/06-17:51:19.810 9efc Delete type=3 #53

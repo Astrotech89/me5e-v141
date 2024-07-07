@@ -1,5 +1,3 @@
-2024/06/22-21:01:09.121 e744 Recovering log #43
-2024/06/22-21:01:09.122 e744 Level-0 table #45: started
-2024/06/22-21:01:09.124 e744 Level-0 table #45: 7550 bytes OK
-2024/06/22-21:01:09.129 e744 Delete type=0 #43
-2024/06/22-21:01:09.130 e744 Delete type=3 #42
+2024/07/06-17:51:19.789 bbc0 Recovering log #55
+2024/07/06-17:51:19.794 bbc0 Delete type=0 #55
+2024/07/06-17:51:19.794 bbc0 Delete type=3 #53

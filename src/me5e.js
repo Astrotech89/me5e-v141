@@ -51,16 +51,17 @@ dnd5e.config.weaponTypes['snp'] = 'Sniper Rifle';
 dnd5e.config.weaponTypes['hvy'] = 'Heavy Weapon';
 
 //Adding weapon properties
-dnd5e.config.weaponProperties['arc'] = 'Arc';
-dnd5e.config.weaponProperties['bst'] = 'Burst Fire';
-dnd5e.config.weaponProperties['dtp'] = 'Double Tap';
-dnd5e.config.weaponProperties['het'] = 'Heat';
-dnd5e.config.weaponProperties['hip'] = 'Hip Fire';
-dnd5e.config.weaponProperties['snt'] = 'Silent';
-dnd5e.config.weaponProperties['coi'] = 'Recoil';
+dnd5e.config.weaponProficiencies['arc'] = 'Arc';
+dnd5e.config.weaponProficiencies['bst'] = 'Burst Fire';
+dnd5e.config.weaponProficiencies['dtp'] = 'Double Tap';
+dnd5e.config.weaponProficiencies['het'] = 'Heat';
+dnd5e.config.weaponProficiencies['hip'] = 'Hip Fire';
+dnd5e.config.weaponProficiencies['snt'] = 'Silent';
+dnd5e.config.weaponProficiencies['coi'] = 'Recoil';
 
 //Changing currencies, all other currencies appear as 0 with no labels
-dnd5e.config.currencies.pp = "Credits"
+dnd5e.config.currencies.cr = {label: 'Credits'}
+delete dnd5e.config.currencies.pp
 delete dnd5e.config.currencies.gp
 delete dnd5e.config.currencies.ep
 delete dnd5e.config.currencies.sp
