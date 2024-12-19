@@ -92,6 +92,7 @@ dnd5e.config.toolProficiencies['h4ck'] = 'Hacking Tools';
 dnd5e.config.toolProficiencies['mdcn'] = 'Medical Kit';
 dnd5e.config.toolProficiencies['pntr'] = "Painter's Supplies";
 dnd5e.config.toolProficiencies['ssdr'] = 'Starship Systems (Drive)';
+dnd5e.config.toolProficiencies['ssna'] = 'Starship Systems (Navigation)';
 dnd5e.config.toolProficiencies['sshe'] = 'Starship Systems (Helm)';
 dnd5e.config.toolProficiencies['sssc'] = 'Starship Systems (SSC)';
 dnd5e.config.toolProficiencies['ssew'] = 'Starship Systems (EWS)';
@@ -99,6 +100,7 @@ dnd5e.config.toolProficiencies['sswp'] = 'Starship Systems (Weapons)';
 dnd5e.config.toolProficiencies['tail'] = "Tailor's Tools";
 dnd5e.config.toolProficiencies['tink'] = "Tinker's Tools";
 dnd5e.config.toolProficiencies['wswb'] = "Weaponsmith's Workbench";
+dnd5e.config.toolProficiencies['ches'] = "Chemist's Supplies";
 
 //Character sheets
 class ME5eCharacterSheet extends dnd5e.applications.actor.ActorSheet5eCharacter {

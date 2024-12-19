@@ -2,14 +2,11 @@
   "id": "me5e-v141",
   "title": "Mass Effect 5e",
   "description": "A module to add support for Mass Effect 5e, an adaptation of the Mass Effect sci-fi universe to work with the dnd5e system.",
+  
   "esmodules": [
     "src/me5e.js"
   ],
-  "flags": {
-    "compatible": [
-      "dnd5e"
-    ]
-  },
+
   "styles": [
     "styles/me5e.css",
     "styles/paragon.css",
@@ -18,7 +15,7 @@
   "packs": [
     {
       "name": "backgrounds-me5e",
-      "label": "Backgrounds (ME5e)",
+      "label": "Backgrounds",
       "system": "dnd5e",
       "path": "packs/backgrounds-me5e",
       "type": "Item",
@@ -30,7 +27,7 @@
     },
     {
       "name": "bestiary-me5e",
-      "label": "Bestiary (ME5e)",
+      "label": "Bestiary",
       "system": "dnd5e",
       "path": "packs/bestiary-me5e",
       "type": "Actor",
@@ -42,7 +39,7 @@
     },
     {
       "name": "classes-me5e-v141",
-      "label": "Classes (ME5e)",
+      "label": "Classes",
       "system": "dnd5e",
       "path": "packs/classes-me5e-v141",
       "type": "Item",
@@ -54,7 +51,7 @@
     },
     {
       "name": "subclasses-me5e-v141",
-      "label": "Subclasses (ME5e)",
+      "label": "Subclasses",
       "system": "dnd5e",
       "path": "packs/subclasses-me5e-v141",
       "type": "Item",
@@ -66,7 +63,7 @@
     },
     {
       "name": "class-features-me5e-v141",
-      "label": "Class Features (ME5e)",
+      "label": "Class Features",
       "system": "dnd5e",
       "path": "packs/class-features-me5e-v141",
       "type": "Item",
@@ -78,7 +75,7 @@
     },
     {
       "name": "feats-me5e",
-      "label": "Feats (ME5e)",
+      "label": "Feats",
       "system": "dnd5e",
       "path": "packs/feats-me5e",
       "type": "Item",
@@ -89,46 +86,10 @@
       }
     },
     {
-      "name": "item-weapons-v141",
-      "label": "Item Weapons (ME5e)",
+      "name": "items",
+      "label": "Items",
       "system": "dnd5e",
-      "path": "packs/item-weapons-v141",
-      "type": "Item",
-      "flags": {},
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "item-armor-v141",
-      "label": "Item Armor (ME5e)",
-      "system": "dnd5e",
-      "path": "packs/item-armor-v141",
-      "type": "Item",
-      "flags": {},
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "item-gear-v141",
-      "label": "Item Gear (ME5e)",
-      "system": "dnd5e",
-      "path": "packs/item-gear-v141",
-      "type": "Item",
-      "flags": {},
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "item-mods-v141",
-      "label": "Item Mods (ME5e)",
-      "system": "dnd5e",
-      "path": "packs/item-mods-v141",
+      "path": "packs/items",
       "type": "Item",
       "flags": {},
       "ownership": {
@@ -138,7 +99,7 @@
     },
     {
       "name": "powers-me5e",
-      "label": "Powers (ME5e)",
+      "label": "Powers",
       "system": "dnd5e",
       "path": "packs/powers-me5e",
       "type": "Item",
@@ -150,7 +111,7 @@
     },
     {
       "name": "vehiclesme5e",
-      "label": "Vehicles (ME5e)",
+      "label": "Vehicles",
       "system": "dnd5e",
       "path": "packs/vehiclesme5e",
       "type": "Actor",
@@ -162,7 +123,7 @@
     },
     {
       "name": "species-me5e-14",
-      "label": "Species (ME5e)",
+      "label": "Species",
       "system": "dnd5e",
       "path": "packs/species-me5e-14",
       "type": "Item",
@@ -174,7 +135,7 @@
     },
     {
       "name": "racial-features-me5e-14",
-      "label": "Racial Features (ME5e)",
+      "label": "Racial Features",
       "system": "dnd5e",
       "path": "packs/racial-features-me5e-14",
       "type": "Item",
@@ -186,7 +147,7 @@
     },
     {
       "name": "weapon-properties",
-      "label": "Weapon Properties (ME5e)",
+      "label": "Weapon Properties",
       "system": "dnd5e",
       "path": "packs/weapon-properties",
       "type": "JournalEntry",
@@ -210,7 +171,7 @@
     },
     {
       "name": "ME5e-RollTables",
-      "label": "ME5e RollTables",
+      "label": "Tables",
       "system": "dnd5e",
       "path": "packs/me5e-rolls",
       "type": "RollTable",
@@ -235,6 +196,47 @@
       "flags": {}
     }
   ],
+
+  "packFolders": [
+    {
+      "name": "Mass Effect 5e",
+      "sorting": "a",
+      "color": "#230ebe",
+      "packs": [
+        "bestiary-me5e",        
+        "ME5e-RollTables",
+        "vehiclesme5e",
+        "ME5e-Rules"
+      ],
+      "folders": [
+          {
+              "name": "Character Features",
+              "sorting": "m",
+              "color": "#230ebe",
+              "packs": [
+                  "backgrounds-me5e",
+                  "species-me5e-14",
+                  "subclasses-me5e-v141",
+                  "class-features-me5e-v141",
+                  "feats-me5e",
+                  "classes-me5e-v141",
+                  "racial-features-me5e-14"
+              ]
+          },
+          {
+              "name": "Items & Powers",
+              "sorting": "m",
+              "color": "#230ebe",
+              "packs": [
+                  "items",
+                  "powers-me5e",
+                  "weapon-properties"
+              ]
+          }      
+      ]
+    }
+  ],
+  
   "relationships": {
     "systems": [
       {
@@ -244,13 +246,6 @@
           "minimum": "2.0.3",
           "verified": "2.0.3"
         }
-      }
-    ],
-    "requires": [
-      {
-        "id": "dae",
-        "type": "module",
-        "compatibility": {}
       }
     ]
   },
@@ -266,14 +261,22 @@
       "flags": {}
     }
   ],
-  "version": "1.1.0",
+  
+  "version": "1.1.3",
+  
   "compatibility": {
     "minimum": "12",
-    "verified": "12.328",
+    "verified": "12",
     "maximum": "12"
   },
+
+
+  
   "url": "https://github.com/Astrotech89/me5e-v141",
   "manifest": "https://github.com/Astrotech89/me5e-v141/releases/latest/download/module.json",
   "download": "https://github.com/Astrotech89/me5e-v141/releases/latest/download/module.zip",
   "readme": "https://github.com/Astrotech89/me5e-v141/raw/main/README.md"
+  
+  
+  
 }
